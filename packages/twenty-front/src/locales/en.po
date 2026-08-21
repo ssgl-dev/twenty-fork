@@ -267,6 +267,12 @@ msgstr "{0} of {1}"
 msgid "{0} opted out of this topic"
 msgstr "{0} opted out of this topic"
 
+#. js-lingui-id: /2HyaM
+#. placeholder {0}: file.rowCount
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "{0} rows"
+msgstr "{0} rows"
+
 #. js-lingui-id: fvImQM
 #. placeholder {0}: formatNumber(contextStoreNumberOfSelectedRecords)
 #. placeholder {0}: formatNumber(totalCount ?? 0)
@@ -297,6 +303,14 @@ msgstr "{0} unsubscribed from everything"
 msgid "{0} used"
 msgstr "{0} used"
 
+#. js-lingui-id: 9qMj9R
+#. placeholder {0}: column.count
+#. placeholder {1}: column.missing
+#. placeholder {2}: column.unique
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "{0} values · {1} missing · {2} unique"
+msgstr "{0} values · {1} missing · {2} unique"
+
 #. js-lingui-id: izNf/z
 #. placeholder {0}: view.name
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
@@ -320,6 +334,12 @@ msgstr "{0} without email"
 #: src/modules/object-record/record-field/ui/form-types/components/FormWorkspaceMemberFilterValueInput.tsx
 msgid "{0} workspace members"
 msgstr "{0} workspace members"
+
+#. js-lingui-id: QfVEDr
+#. placeholder {0}: RUN_STAGES[runStage]
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
+msgid "{0}…"
+msgstr "{0}…"
 
 #. js-lingui-id: qdQhzv
 #: src/modules/views/advanced-filter-chip/components/AdvancedFilterChip.tsx
@@ -1005,6 +1025,11 @@ msgstr "Account Deletion"
 #: src/pages/settings/accounts/SettingsNewAccount.tsx
 msgid "Accounts"
 msgstr "Accounts"
+
+#. js-lingui-id: XmVUbU
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Accuracy"
+msgstr "Accuracy"
 
 #. js-lingui-id: BXMLsb
 #: src/pages/settings/legal/SettingsLegalDpaNew.tsx
@@ -1882,6 +1907,12 @@ msgstr "AKIA..."
 msgid "Alert"
 msgstr "Alert"
 
+#. js-lingui-id: 8JVc5x
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Algorithm"
+msgstr "Algorithm"
+
 #. js-lingui-id: N40H+G
 #: src/modules/activities/files/components/FilesCard.tsx
 #: src/modules/activities/notes/components/NotesCard.tsx
@@ -2210,6 +2241,36 @@ msgstr "An internal error occurred while validating your changes. Please contact
 msgid "An object with this name already exists"
 msgstr "An object with this name already exists"
 
+#. js-lingui-id: QX6zrA
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Analysis"
+msgstr "Analysis"
+
+#. js-lingui-id: mdRY0Y
+#: src/modules/analysis/components/AnalysisResultsPanel.tsx
+msgid "Analysis failed"
+msgstr "Analysis failed"
+
+#. js-lingui-id: eJRwyv
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Analysis Name"
+msgstr "Analysis Name"
+
+#. js-lingui-id: XFHpYb
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Analysis options"
+msgstr "Analysis options"
+
+#. js-lingui-id: vlTgXt
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Analysis Type"
+msgstr "Analysis Type"
+
+#. js-lingui-id: wYxpAk
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Analyze file"
+msgstr "Analyze file"
+
 #. js-lingui-id: HZFm5R
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
 #: src/modules/settings/roles/role-settings/components/SettingsRoleSettingsDeleteRoleConfirmationModalSubtitle.tsx
@@ -2226,6 +2287,37 @@ msgstr "And"
 #: src/modules/settings/billing/components/internal/SettingsBillingPlanComparisonTable.tsx
 msgid "Annual"
 msgstr "Annual"
+
+#. js-lingui-id: 1sBlJf
+#: src/modules/analysis/components/IsolationForestResults.tsx
+msgid "Anomalies Found"
+msgstr "Anomalies Found"
+
+#. js-lingui-id: xss4I2
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Anomalies in numeric columns can reveal data entry errors, outliers, or fraud signals before they skew downstream models."
+msgstr "Anomalies in numeric columns can reveal data entry errors, outliers, or fraud signals before they skew downstream models."
+
+#. js-lingui-id: 9c7z/U
+#: src/modules/analysis/components/IsolationForestResults.tsx
+msgid "Anomalous rows are highlighted in the file preview."
+msgstr "Anomalous rows are highlighted in the file preview."
+
+#. js-lingui-id: mf6G/e
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "anomaly"
+msgstr "anomaly"
+
+#. js-lingui-id: vn5weK
+#. placeholder {0}: anomalousRowIndices.length
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "Anomaly {currentPosition} of {0}"
+msgstr "Anomaly {currentPosition} of {0}"
+
+#. js-lingui-id: zfse7N
+#: src/modules/analysis/components/IsolationForestResults.tsx
+msgid "Anomaly Summary"
+msgstr "Anomaly Summary"
 
 #. js-lingui-id: +qygei
 #: src/modules/ai/components/AiChatQuestionStatusRenderer.tsx
@@ -2938,6 +3030,7 @@ msgid "Axis name"
 msgstr "Axis name"
 
 #. js-lingui-id: iH8pgl
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
 #: src/modules/auth/sign-in-up/components/internal/SignInUpTwoFactorAuthenticationVerification.tsx
 #: src/modules/side-panel/components/SidePanelBackButton.tsx
 #: src/modules/spreadsheet-import/components/StepNavigationButton.tsx
@@ -3376,6 +3469,7 @@ msgid "Can't scan? Copy the"
 msgstr "Can't scan? Copy the"
 
 #. js-lingui-id: dEgA5A
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
 #: src/modules/applications/components/AuthorizeActionButtons.tsx
 #: src/modules/object-record/record-update-multiple/components/UpdateMultipleRecordsFooter.tsx
 #: src/modules/settings/billing/components/AddCreditCardModal.tsx
@@ -4000,10 +4094,31 @@ msgstr "Color code"
 msgid "Colors"
 msgstr "Colors"
 
+#. js-lingui-id: WtgDbl
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Column"
+msgstr "Column"
+
 #. js-lingui-id: P8gRog
 #: src/modules/spreadsheet-import/utils/setColumn.ts
 msgid "column data is not compatible with Multi-Select. Format required is '[\"option1\", \"option2\"]' or option1,option2."
 msgstr "column data is not compatible with Multi-Select. Format required is '[\"option1\", \"option2\"]' or option1,option2."
+
+#. js-lingui-id: kOplfe
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Column Statistics"
+msgstr "Column Statistics"
+
+#. js-lingui-id: /xTbaM
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "columns"
+msgstr "columns"
+
+#. js-lingui-id: jEu4bB
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Columns"
+msgstr "Columns"
 
 #. js-lingui-id: 93hd3e
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/MatchColumnsStep.tsx
@@ -4206,6 +4321,7 @@ msgid "Configuration of this command menu item"
 msgstr "Configuration of this command menu item"
 
 #. js-lingui-id: iAL9tI
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationRegistrationGeneralTab.tsx
 msgid "Configure"
@@ -4366,6 +4482,11 @@ msgstr "Confirm upgrade"
 msgid "Confirming your payment"
 msgstr "Confirming your payment"
 
+#. js-lingui-id: D8DZYf
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Confusion Matrix"
+msgstr "Confusion Matrix"
+
 #. js-lingui-id: LOM1MR
 #: src/pages/auth/Authorize.tsx
 msgid "Connect {appName} to your account"
@@ -4489,6 +4610,11 @@ msgstr "Contact your admin to continue using Workflow or AI features."
 #: src/modules/object-record/object-filter-dropdown/utils/getOperandLabel.ts
 msgid "Contains"
 msgstr "Contains"
+
+#. js-lingui-id: IytqSk
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Contamination Rate"
+msgstr "Contamination Rate"
 
 #. js-lingui-id: 4b3oEV
 #: src/modules/settings/applications/components/SettingsApplicationAboutSidebar.tsx
@@ -4704,6 +4830,11 @@ msgstr "Core"
 msgid "Core Objects"
 msgstr "Core Objects"
 
+#. js-lingui-id: lz4Gel
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Correlation Matrix"
+msgstr "Correlation Matrix"
+
 #. js-lingui-id: I99Miw
 #: src/modules/ai/components/internal/AiChatContextUsageButton.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsAiAgentDetail.tsx
@@ -4832,6 +4963,7 @@ msgid "Couldn't update favorite"
 msgstr "Couldn't update favorite"
 
 #. js-lingui-id: wBMjJ2
+#: src/modules/analysis/components/DescriptiveResults.tsx
 #: src/modules/object-record/record-board/record-board-column/components/RecordBoardColumnHeaderAggregateDropdownContent.tsx
 #: src/modules/object-record/record-board/record-board-column/components/RecordBoardColumnHeaderAggregateDropdownMenuContent.tsx
 #: src/modules/object-record/record-table/record-table-footer/components/RecordTableColumnAggregateFooterDropdownContent.tsx
@@ -5611,6 +5743,18 @@ msgstr "Database configuration is currently disabled."
 msgid "Database event"
 msgstr "Database event"
 
+#. js-lingui-id: sdPN1F
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Dataset"
+msgstr "Dataset"
+
+#. js-lingui-id: bG6PJ+
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Dataset info"
+msgstr "Dataset info"
+
 #. js-lingui-id: mYGY3B
 #: src/modules/ai/constants/AgentChatThreadGroupByLabels.ts
 #: src/modules/object-record/record-board/record-board-column/components/RecordBoardColumnHeaderAggregateDropdownContent.tsx
@@ -5898,6 +6042,8 @@ msgstr "delete"
 #: src/modules/views/view-picker/components/ViewPickerOptionDropdown.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowStepFooter.tsx
 #: src/modules/workflow/workflow-steps/filters/components/WorkflowStepFilterOptionsDropdown.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDangerZone.tsx
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
@@ -6449,6 +6595,7 @@ msgstr "Downgrade to monthly"
 #. js-lingui-id: mzI/c+
 #: src/modules/activities/files/components/AttachmentDropdown.tsx
 #: src/modules/activities/files/components/DocumentViewer.tsx
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
 #: src/modules/settings/legal/components/SettingsDpaAgreementRow.tsx
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationGeneralInfo.tsx
 msgid "Download"
@@ -6458,6 +6605,11 @@ msgstr "Download"
 #: src/modules/ai/components/CodeExecutionDisplay.tsx
 msgid "Download {filename}"
 msgstr "Download {filename}"
+
+#. js-lingui-id: kodV18
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "Download CSV"
+msgstr "Download CSV"
 
 #. js-lingui-id: WcWS//
 #: src/modules/settings/security/components/SSO/SettingsSSOSAMLForm.tsx
@@ -6503,6 +6655,11 @@ msgstr "Drafted email"
 #: src/modules/ai/constants/action-tool-status-labels.constant.ts
 msgid "Drafting email"
 msgstr "Drafting email"
+
+#. js-lingui-id: sMkfAD
+#: src/modules/analysis/components/CsvUploadStep.tsx
+msgid "Drag and drop a CSV file here, or click to browse"
+msgstr "Drag and drop a CSV file here, or click to browse"
 
 #. js-lingui-id: XKUtpI
 #: src/modules/activities/files/components/DropZone.tsx
@@ -6623,6 +6780,11 @@ msgstr "e.g. my-workspace"
 #: src/pages/settings/admin-panel/SettingsAdminNewAiProvider.tsx
 msgid "e.g. OpenAI EU"
 msgstr "e.g. OpenAI EU"
+
+#. js-lingui-id: eMZDmw
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "e.g. species, churn, category"
+msgstr "e.g. species, churn, category"
 
 #. js-lingui-id: p5P8NB
 #: src/pages/settings/ai/components/SettingsAiOverviewTab.tsx
@@ -7879,6 +8041,11 @@ msgstr "Expression"
 msgid "Extended"
 msgstr "Extended"
 
+#. js-lingui-id: mHTfha
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "F1 Score"
+msgstr "F1 Score"
+
 #. js-lingui-id: 7Bj3x9
 #: src/modules/ai/components/CodeExecutionDisplay.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
@@ -8249,6 +8416,12 @@ msgstr "Feature Flag"
 msgid "Feature Flags"
 msgstr "Feature Flags"
 
+#. js-lingui-id: RDQRca
+#: src/modules/analysis/components/ClassificationResults.tsx
+#: src/modules/analysis/components/IsolationForestResults.tsx
+msgid "Feature Importance"
+msgstr "Feature Importance"
+
 #. js-lingui-id: PpZkda
 #: src/pages/settings/community/SettingsCommunity.tsx
 msgid "Features"
@@ -8319,6 +8492,7 @@ msgid "fields"
 msgstr "fields"
 
 #. js-lingui-id: vF68cg
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownDefaultView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownFieldsContent.tsx
@@ -8400,6 +8574,11 @@ msgstr "fifth"
 msgid "Fifth"
 msgstr "Fifth"
 
+#. js-lingui-id: J2eKUI
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "File"
+msgstr "File"
+
 #. js-lingui-id: sWmIx3
 #: src/modules/activities/emails/hooks/useUploadEmailAttachment.ts
 #: src/modules/advanced-text-editor/hooks/useUploadWorkflowFile.ts
@@ -8427,6 +8606,16 @@ msgstr "File label"
 #: src/modules/ui/field/display/components/FileChip.tsx
 msgid "File no longer exists - {label}"
 msgstr "File no longer exists - {label}"
+
+#. js-lingui-id: cfBi2z
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "File options"
+msgstr "File options"
+
+#. js-lingui-id: q7Xao4
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Files to analyze"
+msgstr "Files to analyze"
 
 #. js-lingui-id: BZGmTs
 #: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionTestTab.tsx
@@ -9181,6 +9370,11 @@ msgstr "Hidden from email-domain discovery. Members and invitees still see it."
 msgid "Hide"
 msgstr "Hide"
 
+#. js-lingui-id: Lw8Vzy
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Hide anomalies"
+msgstr "Hide anomalies"
+
 #. js-lingui-id: MuEcPp
 #: src/modules/side-panel/pages/page-layout/constants/settings/ChartConfigurationSettingLabels.ts
 msgid "Hide empty category"
@@ -9211,6 +9405,11 @@ msgstr "Hide label"
 #: src/modules/settings/data-model/object-details/components/tabs/SettingsObjectIndexesSection.tsx
 msgid "Hide system indexes"
 msgstr "Hide system indexes"
+
+#. js-lingui-id: s4Ece4
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Highlight anomalies"
+msgstr "Highlight anomalies"
 
 #. js-lingui-id: 1ETc0T
 #: src/pages/settings/community/SettingsCommunity.tsx
@@ -11173,6 +11372,7 @@ msgid "Match Columns"
 msgstr "Match Columns"
 
 #. js-lingui-id: CK1KXz
+#: src/modules/analysis/components/DescriptiveResults.tsx
 #: src/modules/object-record/record-board/record-board-column/utils/getAggregateOperationLabel.ts
 #: src/modules/object-record/record-board/record-board-column/utils/getAggregateOperationShortLabel.ts
 #: src/modules/side-panel/pages/page-layout/constants/settings/RangeMaxSetting.ts
@@ -11275,6 +11475,11 @@ msgstr "Me"
 #: src/modules/settings/roles/role-permissions/object-level-permissions/record-level-permissions/components/SettingsRolePermissionsObjectLevelRecordLevelPermissionMeValueSelect.tsx
 msgid "Me (User ID)"
 msgstr "Me (User ID)"
+
+#. js-lingui-id: Q2vMbi
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Mean"
+msgstr "Mean"
 
 #. js-lingui-id: IAcjOi
 #: src/modules/advanced-text-editor/extensions/slash-command/DefaultSlashCommands.ts
@@ -11393,6 +11598,7 @@ msgid "Microsoft"
 msgstr "Microsoft"
 
 #. js-lingui-id: eTUF28
+#: src/modules/analysis/components/DescriptiveResults.tsx
 #: src/modules/object-record/record-board/record-board-column/utils/getAggregateOperationLabel.ts
 #: src/modules/object-record/record-board/record-board-column/utils/getAggregateOperationShortLabel.ts
 #: src/modules/side-panel/pages/page-layout/constants/settings/RangeMinSetting.ts
@@ -11424,6 +11630,11 @@ msgstr "Minutes"
 msgid "Minutes between triggers"
 msgstr "Minutes between triggers"
 
+#. js-lingui-id: VU3Nrn
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Missing"
+msgstr "Missing"
+
 #. js-lingui-id: cOFpUq
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionCreateCalendarEvent.tsx
 msgid "Missing calendar permission."
@@ -11433,6 +11644,11 @@ msgstr "Missing calendar permission."
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionEmailBase.tsx
 msgid "Missing email draft permission."
 msgstr "Missing email draft permission."
+
+#. js-lingui-id: Xf1Xmy
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Missing values affect which analyses can run reliably — descriptive stats always report them explicitly."
+msgstr "Missing values affect which analyses can run reliably — descriptive stats always report them explicitly."
 
 #. js-lingui-id: mibKsa
 #: src/modules/activities/tasks/components/TaskGroups.tsx
@@ -11471,6 +11687,11 @@ msgstr "Model ID"
 #: src/pages/settings/admin-panel/SettingsAdminNewAiModel.tsx
 msgid "Model ID is required"
 msgstr "Model ID is required"
+
+#. js-lingui-id: O9AxPV
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Model Performance"
+msgstr "Model Performance"
 
 #. js-lingui-id: //nm2/
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
@@ -11666,6 +11887,11 @@ msgstr "must be an array of object with valid url and label (format: '[{\"url\":
 msgid "must be an array of valid emails"
 msgstr "must be an array of valid emails"
 
+#. js-lingui-id: TwDvtZ
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "My Analysis"
+msgstr "My Analysis"
+
 #. js-lingui-id: OJCJh9
 #: src/pages/settings/applications/tabs/SettingsApplicationsDeveloperTab.tsx
 msgid "My apps"
@@ -11858,6 +12084,12 @@ msgstr "New AI chat"
 #: src/pages/settings/admin-panel/SettingsAdminNewAiProvider.tsx
 msgid "New AI Provider"
 msgstr "New AI Provider"
+
+#. js-lingui-id: TQVYwn
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "New Analysis"
+msgstr "New Analysis"
 
 #. js-lingui-id: 2qr/61
 #: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
@@ -12062,6 +12294,11 @@ msgstr "Newsletters"
 msgid "Next"
 msgstr "Next"
 
+#. js-lingui-id: TQwTeK
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "Next anomaly"
+msgstr "Next anomaly"
+
 #. js-lingui-id: L0DCk4
 #: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
 msgid "Next charge {totalRenewDate}. Invoice amount may vary if you add members or credits between periods"
@@ -12165,6 +12402,11 @@ msgstr "No AI models are enabled in this workspace."
 #: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
 msgid "No AI usage data recorded yet."
 msgstr "No AI usage data recorded yet."
+
+#. js-lingui-id: aEggo1
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "No analyses yet"
+msgstr "No analyses yet"
 
 #. js-lingui-id: 9mx36q
 #: src/modules/settings/roles/role-assignment/components/SettingsRoleAssignmentTable.tsx
@@ -12663,6 +12905,12 @@ msgstr "No Results"
 msgid "No results found"
 msgstr "No results found"
 
+#. js-lingui-id: xwqrbE
+#: src/modules/analysis/components/AnalysisResultsPanel.tsx
+#: src/modules/analysis/components/AnalysisResultsPanel.tsx
+msgid "No results yet"
+msgstr "No results yet"
+
 #. js-lingui-id: FVzmGK
 #: src/modules/settings/members/components/MemberPermissionsTab.tsx
 msgid "No role assigned to this member"
@@ -12672,6 +12920,11 @@ msgstr "No role assigned to this member"
 #: src/modules/settings/roles/components/SettingsRolesList.tsx
 msgid "No roles found"
 msgstr "No roles found"
+
+#. js-lingui-id: 1wmUGO
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "No rows to preview"
+msgstr "No rows to preview"
 
 #. js-lingui-id: mmm8hk
 #: src/modules/spreadsheet-import/steps/components/ValidationStep/ValidationStep.tsx
@@ -12965,6 +13218,11 @@ msgstr "Number of days to retain audit logs (30-1095 days)"
 #: src/modules/settings/data-model/fields/forms/number/components/SettingsDataModelFieldNumberForm.tsx
 msgid "Number of decimals"
 msgstr "Number of decimals"
+
+#. js-lingui-id: rZbHpn
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Number of Estimators"
+msgstr "Number of Estimators"
 
 #. js-lingui-id: n49P/Y
 #: src/modules/workflow/workflow-steps/workflow-actions/find-records-action/components/WorkflowEditActionFindRecords.tsx
@@ -13886,6 +14144,11 @@ msgstr "Pick a {objectLabel} record"
 msgid "Pick a connected account or set a workspace member as variable"
 msgstr "Pick a connected account or set a workspace member as variable"
 
+#. js-lingui-id: NpEQ+D
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Pick a dataset from the list, then run an analysis on it."
+msgstr "Pick a dataset from the list, then run an analysis on it."
+
 #. js-lingui-id: JqqNlC
 #: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
 msgid "Pick a view"
@@ -14112,6 +14375,11 @@ msgstr "Pre-install on new workspaces"
 msgid "Pre-installed only"
 msgstr "Pre-installed only"
 
+#. js-lingui-id: FlMg9W
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Precision"
+msgstr "Precision"
+
 #. js-lingui-id: 0Lqxjs
 #: src/modules/auth/sign-in-up/constants/WorkspaceActivationMessages.tsx
 msgid "Prefilling your <0>workspace data</0>..."
@@ -14154,6 +14422,11 @@ msgstr "Previous"
 #: src/modules/ai/utils/groupThreadsByDate.ts
 msgid "Previous 7 days"
 msgstr "Previous 7 days"
+
+#. js-lingui-id: PDJA/s
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "Previous anomaly"
+msgstr "Previous anomaly"
 
 #. js-lingui-id: KaMwgJ
 #: src/modules/object-record/record-calendar/components/RecordCalendarTopBar.tsx
@@ -14484,6 +14757,11 @@ msgstr "Reasoning"
 msgid "Reauthorize"
 msgstr "Reauthorize"
 
+#. js-lingui-id: EjJl4z
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Recall"
+msgstr "Recall"
+
 #. js-lingui-id: BT7pY+
 #: src/modules/settings/profile/components/SetOrChangePassword.tsx
 msgid "Receive an email containing password set link"
@@ -14493,6 +14771,11 @@ msgstr "Receive an email containing password set link"
 #: src/modules/settings/profile/components/SetOrChangePassword.tsx
 msgid "Receive an email containing password update link"
 msgstr "Receive an email containing password update link"
+
+#. js-lingui-id: le4Y9Y
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Recent analyses"
+msgstr "Recent analyses"
 
 #. js-lingui-id: ZVr1+K
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminWorkerMetricsGraph.tsx
@@ -15141,8 +15424,10 @@ msgid "Result"
 msgstr "Result"
 
 #. js-lingui-id: kx0s+n
+#: src/modules/analysis/components/AnalysisResultsPanel.tsx
 #: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemRecordSubPage.tsx
 #: src/modules/side-panel/pages/search/components/SidePanelSearchRecordsPage.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
 msgid "Results"
 msgstr "Results"
 
@@ -15342,6 +15627,16 @@ msgstr "Row-level permissions"
 msgid "Row-level security"
 msgstr "Row-level security"
 
+#. js-lingui-id: OXexf7
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "rows"
+msgstr "rows"
+
+#. js-lingui-id: hL5+/P
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Rows"
+msgstr "Rows"
+
 #. js-lingui-id: 7jTlsu
 #: src/modules/settings/data-model/fields/forms/select/components/SettingsDataModelFieldSelectFormOptionRow.tsx
 msgid "Ruby"
@@ -15357,6 +15652,11 @@ msgstr "Run"
 msgid "Run a workflow and return here to view its executions"
 msgstr "Run a workflow and return here to view its executions"
 
+#. js-lingui-id: jKapIA
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
+msgid "Run Analysis"
+msgstr "Run Analysis"
+
 #. js-lingui-id: rRyKdg
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useActionRolePermissionFlagConfig.ts
 msgid "Run code to analyze files and data"
@@ -15371,6 +15671,12 @@ msgstr "Run Function"
 #: src/modules/ai/utils/tool-display/build-generic-tool-status-message.util.ts
 msgid "Running {label}"
 msgstr "Running {label}"
+
+#. js-lingui-id: 5vPmiE
+#: src/modules/analysis/components/AnalysisResultsPanel.tsx
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
+msgid "Running analysis…"
+msgstr "Running analysis…"
 
 #. js-lingui-id: YmLrjz
 #: src/modules/ai/utils/tool-display/get-tool-display-message.ts
@@ -15970,6 +16276,16 @@ msgstr "Select a field from a previous step"
 #: src/modules/page-layout/widgets/field/components/FieldWidget.tsx
 msgid "Select a field to display in this widget"
 msgstr "Select a field to display in this widget"
+
+#. js-lingui-id: jDn4An
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Select a file to preview its contents"
+msgstr "Select a file to preview its contents"
+
+#. js-lingui-id: U8zfLT
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Select a file to see its metadata"
+msgstr "Select a file to see its metadata"
 
 #. js-lingui-id: rHNnAT
 #: src/pages/settings/admin-panel/SettingsAdminNewAiModel.tsx
@@ -16589,6 +16905,7 @@ msgid "Sixth"
 msgstr "Sixth"
 
 #. js-lingui-id: Cj2Gtd
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
 #: src/pages/settings/layout/SettingsLayoutViewDetail.tsx
 msgid "Size"
 msgstr "Size"
@@ -16961,6 +17278,11 @@ msgstr "Status"
 msgid "Stay up to date with product news and community updates."
 msgstr "Stay up to date with product news and community updates."
 
+#. js-lingui-id: DkWqjA
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Std"
+msgstr "Std"
+
 #. js-lingui-id: lATgy+
 #: src/modules/workflow/workflow-steps/filters/components/WorkflowStepFilterGroupOptionsDropdown.tsx
 msgid "Step filter group options"
@@ -17212,6 +17534,11 @@ msgstr "Sunday"
 msgid "Support"
 msgstr "Support"
 
+#. js-lingui-id: 2xqUQI
+#: src/modules/analysis/components/CsvUploadStep.tsx
+msgid "Supported format: .csv (max 100MB)"
+msgstr "Supported format: .csv (max 100MB)"
+
 #. js-lingui-id: omBFwv
 #: src/pages/settings/admin-panel/SettingsAdminNewAiModel.tsx
 msgid "Supported input types"
@@ -17401,6 +17728,16 @@ msgstr "Table, Kanban, Calendar"
 msgid "Take ownership of an app you published to npm. Enter its exact package name (or universal identifier) to find it."
 msgstr "Take ownership of an app you published to npm. Enter its exact package name (or universal identifier) to find it."
 
+#. js-lingui-id: Yrrg+y
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Target"
+msgstr "Target"
+
+#. js-lingui-id: tN9Rjq
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Target Column"
+msgstr "Target Column"
+
 #. js-lingui-id: sceIIK
 #: src/modules/settings/data-model/fields/forms/morph-relation/components/SettingsDataModelFieldRelationJunctionForm.tsx
 msgid "Target relation on Junction Object"
@@ -17460,6 +17797,11 @@ msgstr "Terms of Service"
 #: src/pages/settings/logic-functions/SettingsLogicFunctionDetail.tsx
 msgid "Test"
 msgstr "Test"
+
+#. js-lingui-id: yuNplX
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Test Split"
+msgstr "Test Split"
 
 #. js-lingui-id: 3nWPN6
 #: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionTestTab.tsx
@@ -17916,6 +18258,12 @@ msgstr "This feature is part of the Enterprise Plan"
 msgid "This file cannot be previewed because it is hosted locally."
 msgstr "This file cannot be previewed because it is hosted locally."
 
+#. js-lingui-id: q80dtG
+#. placeholder {0}: file.rowCount
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "This file has {0} rows; analyses run on the full dataset, not just the preview shown here."
+msgstr "This file has {0} rows; analyses run on the full dataset, not just the preview shown here."
+
 #. js-lingui-id: hMvPrD
 #: src/modules/activities/files/components/DocumentViewer.tsx
 msgid "This file type cannot be previewed. Please download the file to view it."
@@ -18344,6 +18692,11 @@ msgstr "Total cost"
 msgid "Total Jobs"
 msgstr "Total Jobs"
 
+#. js-lingui-id: JDgza+
+#: src/modules/analysis/components/IsolationForestResults.tsx
+msgid "Total Rows"
+msgstr "Total Rows"
+
 #. js-lingui-id: /kXBrK
 #: src/modules/ai/components/RoutingDebugDisplay.tsx
 msgid "Total time"
@@ -18572,6 +18925,7 @@ msgid "Two-factor authentication setup completed successfully!"
 msgstr "Two-factor authentication setup completed successfully!"
 
 #. js-lingui-id: +zy2Nq
+#: src/modules/analysis/components/DescriptiveResults.tsx
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
 #: src/modules/settings/data-model/indexes/forms/components/SettingsObjectIndexOptionsForm.tsx
 #: src/modules/settings/data-model/object-details/components/SettingsObjectRelationsTable.tsx
@@ -18709,11 +19063,17 @@ msgid "Uninstalling..."
 msgstr "Uninstalling..."
 
 #. js-lingui-id: wSXm5S
+#: src/modules/analysis/components/DescriptiveResults.tsx
 #: src/modules/object-record/record-board/record-board-column/utils/getAggregateOperationShortLabel.ts
 #: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldIsUniqueForm.tsx
 #: src/pages/settings/data-model/SettingsObjectIndexTable.tsx
 msgid "Unique"
 msgstr "Unique"
+
+#. js-lingui-id: +MLDET
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Unique counts tell you whether a column is an identifier, a category, or a continuous measurement."
+msgstr "Unique counts tell you whether a column is an identifier, a category, or a continuous measurement."
 
 #. js-lingui-id: +WHV0k
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionUpsertRecord.tsx
@@ -19156,6 +19516,16 @@ msgstr "Upload"
 msgid "Upload .xlsx, .xls or .csv file"
 msgstr "Upload .xlsx, .xls or .csv file"
 
+#. js-lingui-id: hFpklX
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
+msgid "Upload CSV"
+msgstr "Upload CSV"
+
+#. js-lingui-id: yFymvc
+#: src/modules/analysis/components/CsvUploadStep.tsx
+msgid "Upload CSV file"
+msgstr "Upload CSV file"
+
 #. js-lingui-id: 2IXDgU
 #: src/modules/activities/emails/components/EmailAttachmentsField.tsx
 #: src/modules/advanced-text-editor/components/WorkflowSendEmailAttachments.tsx
@@ -19194,6 +19564,11 @@ msgstr "Upload profile picture"
 #: src/modules/settings/security/components/SSO/SettingsSSOSAMLForm.tsx
 msgid "Upload the XML file with your connection infos"
 msgstr "Upload the XML file with your connection infos"
+
+#. js-lingui-id: 3wG7HI
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Uploaded"
+msgstr "Uploaded"
 
 #. js-lingui-id: XzIB4l
 #: src/modules/apollo/services/apollo.factory.ts
@@ -20100,6 +20475,11 @@ msgstr "Whether this model supports chain-of-thought reasoning"
 #: src/modules/workflow/workflow-variables/utils/getWorkflowVariableSpecialItems.ts
 msgid "Whole list"
 msgstr "Whole list"
+
+#. js-lingui-id: Cl+jVb
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Why this matters"
+msgstr "Why this matters"
 
 #. js-lingui-id: dmoPOu
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx

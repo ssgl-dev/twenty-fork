@@ -103,6 +103,11 @@ msgstr "A connection provider with this name already exists for this application
 msgid "A dashboard"
 msgstr "A dashboard"
 
+#. js-lingui-id: JVs8rP
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgid "A data analysis"
+msgstr "A data analysis"
+
 #. js-lingui-id: ixdsnM
 #: src/engine/core-modules/dns-manager/exceptions/dns-manager.exception.ts
 msgid "A DNS manager error occurred."
@@ -594,6 +599,33 @@ msgstr "An unexpected error occurred."
 msgid "An unknown calendar error occurred."
 msgstr "An unknown calendar error occurred."
 
+#. js-lingui-id: Sjmdz3
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgid "Analyses"
+msgstr "Analyses"
+
+#. js-lingui-id: QX6zrA
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgid "Analysis"
+msgstr "Analysis"
+
+#. js-lingui-id: YdufVG
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Analysis configuration options"
+msgstr "Analysis configuration options"
+
+#. js-lingui-id: yvjkA/
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Analysis result data"
+msgstr "Analysis result data"
+
+#. js-lingui-id: vlTgXt
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Analysis Type"
+msgstr "Analysis Type"
+
 #. js-lingui-id: Jrl0Z/
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-company-standard-flat-field-metadata.util.ts
 msgid "Annual Revenue"
@@ -798,15 +830,22 @@ msgstr "Attachment record position"
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 msgid "Attachment target"
 msgstr "Attachment target"
 
 #. js-lingui-id: w/Sphq
 #: src/engine/metadata-modules/object-metadata/constants/standard-relation-field-properties.constant.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
 msgid "Attachments"
 msgstr "Attachments"
+
+#. js-lingui-id: e6hV5n
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Attachments linked to the analysis"
+msgstr "Attachments linked to the analysis"
 
 #. js-lingui-id: iVnA89
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-company-standard-flat-field-metadata.util.ts
@@ -1608,6 +1647,11 @@ msgstr "Composite type not found."
 msgid "Conference Solution"
 msgstr "Conference Solution"
 
+#. js-lingui-id: ywFj2D
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Configuration"
+msgstr "Configuration"
+
 #. js-lingui-id: yU57/s
 #: src/engine/metadata-modules/flat-page-layout-widget/validators/utils/validate-fields-flat-page-layout-widget-for-creation.util.ts
 msgid "Configuration is required for fields widget"
@@ -1876,6 +1920,7 @@ msgid "Create Calendar Event"
 msgstr "Create Calendar Event"
 
 #. js-lingui-id: NCIYDF
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -1912,6 +1957,8 @@ msgid "Created field metadata, parent object metadata not found"
 msgstr "Created field metadata, parent object metadata not found"
 
 #. js-lingui-id: wPvFAD
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
@@ -1988,6 +2035,11 @@ msgstr "Cron"
 #: src/modules/workflow/workflow-trigger/utils/compute-cron-pattern-from-schedule.ts
 msgid "Cron pattern '{pattern}' is invalid"
 msgstr "Cron pattern '{pattern}' is invalid"
+
+#. js-lingui-id: FqlFHJ
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Current status of the analysis"
+msgstr "Current status of the analysis"
 
 #. js-lingui-id: DIjcDc
 #: src/engine/metadata-modules/command-menu-item/command-menu-item.exception.ts
@@ -2066,12 +2118,18 @@ msgstr "Database configuration is disabled."
 msgid "Database Event"
 msgstr "Database Event"
 
+#. js-lingui-id: sdPN1F
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Dataset"
+msgstr "Dataset"
+
 #. js-lingui-id: Lhd0oQ
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workspace-member-standard-flat-field-metadata.util.ts
 msgid "Date format"
 msgstr "Date format"
 
 #. js-lingui-id: 1lL5Iu
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -2184,6 +2242,7 @@ msgid "Delete"
 msgstr "Delete"
 
 #. js-lingui-id: QN9ahV
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -3326,6 +3385,8 @@ msgid "iCal UID"
 msgstr "iCal UID"
 
 #. js-lingui-id: dFb5Nt
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
@@ -4493,6 +4554,7 @@ msgid "Last published Version Id"
 msgstr "Last published Version Id"
 
 #. js-lingui-id: tGwswq
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -4525,6 +4587,7 @@ msgid "Last time the record was changed"
 msgstr "Last time the record was changed"
 
 #. js-lingui-id: o1zvNS
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -5026,6 +5089,7 @@ msgid "Multiple subscriptions found where one was expected."
 msgstr "Multiple subscriptions found where one was expected."
 
 #. js-lingui-id: 6YtxFj
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-company-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-list-standard-flat-field-metadata.util.ts
@@ -5303,9 +5367,15 @@ msgid "Note targets"
 msgstr "Note targets"
 
 #. js-lingui-id: tD4BxK
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
 msgid "Note Targets"
 msgstr "Note Targets"
+
+#. js-lingui-id: 8XSi/X
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Note targets linked to the analysis"
+msgstr "Note targets linked to the analysis"
 
 #. js-lingui-id: jDThel
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-standard-flat-field-metadata.util.ts
@@ -5346,6 +5416,7 @@ msgid "NoteTarget record position"
 msgstr "NoteTarget record position"
 
 #. js-lingui-id: mqwohF
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
@@ -6169,6 +6240,7 @@ msgid "Point of Contact"
 msgstr "Point of Contact"
 
 #. js-lingui-id: p/78dY
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -6363,6 +6435,11 @@ msgstr "Record does not satisfy security constraints."
 #: src/engine/core-modules/record-crud/exceptions/record-crud.exception.ts
 msgid "Record not found."
 msgstr "Record not found."
+
+#. js-lingui-id: awj87L
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Record position"
+msgstr "Record position"
 
 #. js-lingui-id: LVUF8D
 #: src/engine/metadata-modules/view/services/view-widget-upsert.service.ts
@@ -6569,6 +6646,11 @@ msgstr "Response format with type \"text\" should not include a schema"
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-event-participant-standard-flat-field-metadata.util.ts
 msgid "Response Status"
 msgstr "Response Status"
+
+#. js-lingui-id: RD6AE9
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Result"
+msgstr "Result"
 
 #. js-lingui-id: 1AYnSb
 #: src/engine/metadata-modules/page-layout-widget/constants/standard-page-layout-widget-titles.ts
@@ -6873,6 +6955,8 @@ msgstr "Search Help Center"
 
 #. js-lingui-id: PdVIJC
 #: src/engine/metadata-modules/search-field-metadata/constants/search-vector-field.constants.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -7158,6 +7242,7 @@ msgid "State of the workflow run"
 msgstr "State of the workflow run"
 
 #. js-lingui-id: uAQUqI
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-campaign-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-task-standard-flat-field-metadata.util.ts
@@ -7291,6 +7376,11 @@ msgstr "Tab 1"
 #: src/engine/metadata-modules/page-layout/exceptions/page-layout.exception.ts
 msgid "Tab not found for widget duplication."
 msgstr "Tab not found for widget duplication."
+
+#. js-lingui-id: tN9Rjq
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Target Column"
+msgstr "Target Column"
 
 #. js-lingui-id: 5y3Wbw
 #: src/engine/twenty-orm/utils/compute-relation-connect-query-configs.util.ts
@@ -7477,6 +7567,11 @@ msgstr "Text response format should not have a schema"
 msgid "The agent you are looking for could not be found. It may have been deleted or you may not have access to it."
 msgstr "The agent you are looking for could not be found. It may have been deleted or you may not have access to it."
 
+#. js-lingui-id: myEg8G
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "The analysis name"
+msgstr "The analysis name"
+
 #. js-lingui-id: eC8p5b
 #: src/engine/metadata-modules/permissions/permissions.service.ts
 msgid "The API key does not have a valid role assigned. Please check your API key configuration."
@@ -7573,6 +7668,11 @@ msgstr "The creator of the record"
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-standard-flat-field-metadata.util.ts
 msgid "The current statuses of the workflow versions"
 msgstr "The current statuses of the workflow versions"
+
+#. js-lingui-id: fTSBpm
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "The dataset file to analyze"
+msgstr "The dataset file to analyze"
 
 #. js-lingui-id: 0bo4Q0
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-standard-flat-field-metadata.util.ts
@@ -7753,6 +7853,11 @@ msgstr "The server's APP_VERSION is not a valid semver version. Self-hosted inst
 msgid "The singular and plural names cannot be the same for an object"
 msgstr "The singular and plural names cannot be the same for an object"
 
+#. js-lingui-id: cvvluv
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "The target column for analysis"
+msgstr "The target column for analysis"
+
 #. js-lingui-id: RCS0+I
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-campaign-standard-flat-field-metadata.util.ts
 msgid "The unsubscribe topic this campaign was sent under"
@@ -7769,6 +7874,16 @@ msgstr "The uploaded file does not match the declared size. Please retry the upl
 #: src/engine/core-modules/file/file-upload/services/file-upload.service.ts
 msgid "The uploaded file is larger than declared."
 msgstr "The uploaded file is larger than declared."
+
+#. js-lingui-id: zbfbir
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "The user who created the record"
+msgstr "The user who created the record"
+
+#. js-lingui-id: orqFKM
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "The user who last updated the record"
+msgstr "The user who last updated the record"
 
 #. js-lingui-id: 9bYo5E
 #: src/modules/connected-account-sync-webhooks/connected-account-sync-webhook.exception.ts
@@ -8404,6 +8519,11 @@ msgstr "Two-factor authentication setup is required."
 msgid "Two-factor authentication verification is required."
 msgstr "Two-factor authentication verification is required."
 
+#. js-lingui-id: 1o5KT8
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Type of analysis to run"
+msgstr "Type of analysis to run"
+
 #. js-lingui-id: Qx95XY
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-morph-or-relation-flat-field-metadata.util.ts
 msgid "Udpated field is not a morph relation or a relation"
@@ -8494,6 +8614,7 @@ msgid "Update field restrictions only apply to updatable objects."
 msgstr "Update field restrictions only apply to updatable objects."
 
 #. js-lingui-id: KQsreu
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts

@@ -108,6 +108,11 @@ msgstr "Poskytovatel připojení s tímto názvem již pro tuto aplikaci existuj
 msgid "A dashboard"
 msgstr "Panel"
 
+#. js-lingui-id: JVs8rP
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgid "A data analysis"
+msgstr ""
+
 #. js-lingui-id: ixdsnM
 #: src/engine/core-modules/dns-manager/exceptions/dns-manager.exception.ts
 msgid "A DNS manager error occurred."
@@ -599,6 +604,33 @@ msgstr "Došlo k neočekávané chybě."
 msgid "An unknown calendar error occurred."
 msgstr "Došlo k neznámé chybě kalendáře."
 
+#. js-lingui-id: Sjmdz3
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgid "Analyses"
+msgstr ""
+
+#. js-lingui-id: QX6zrA
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgid "Analysis"
+msgstr ""
+
+#. js-lingui-id: YdufVG
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Analysis configuration options"
+msgstr ""
+
+#. js-lingui-id: yvjkA/
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Analysis result data"
+msgstr ""
+
+#. js-lingui-id: vlTgXt
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Analysis Type"
+msgstr ""
+
 #. js-lingui-id: Jrl0Z/
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-company-standard-flat-field-metadata.util.ts
 msgid "Annual Revenue"
@@ -803,15 +835,22 @@ msgstr "Pozice záznamu přílohy"
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 msgid "Attachment target"
 msgstr "Cíl přílohy"
 
 #. js-lingui-id: w/Sphq
 #: src/engine/metadata-modules/object-metadata/constants/standard-relation-field-properties.constant.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
 msgid "Attachments"
 msgstr "Přílohy"
+
+#. js-lingui-id: e6hV5n
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Attachments linked to the analysis"
+msgstr ""
 
 #. js-lingui-id: iVnA89
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-company-standard-flat-field-metadata.util.ts
@@ -1613,6 +1652,11 @@ msgstr "Kompozitní typ nenalezen."
 msgid "Conference Solution"
 msgstr "Řešení pro konference"
 
+#. js-lingui-id: ywFj2D
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Configuration"
+msgstr ""
+
 #. js-lingui-id: yU57/s
 #: src/engine/metadata-modules/flat-page-layout-widget/validators/utils/validate-fields-flat-page-layout-widget-for-creation.util.ts
 msgid "Configuration is required for fields widget"
@@ -1881,6 +1925,7 @@ msgid "Create Calendar Event"
 msgstr "Vytvořit událost v kalendáři"
 
 #. js-lingui-id: NCIYDF
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -1917,6 +1962,8 @@ msgid "Created field metadata, parent object metadata not found"
 msgstr "Vytvořena metadata pole, metadata nadřazeného objektu nenalezena"
 
 #. js-lingui-id: wPvFAD
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
@@ -1993,6 +2040,11 @@ msgstr "Cron"
 #: src/modules/workflow/workflow-trigger/utils/compute-cron-pattern-from-schedule.ts
 msgid "Cron pattern '{pattern}' is invalid"
 msgstr "Cron vzor '{pattern}' je neplatný"
+
+#. js-lingui-id: FqlFHJ
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Current status of the analysis"
+msgstr ""
 
 #. js-lingui-id: DIjcDc
 #: src/engine/metadata-modules/command-menu-item/command-menu-item.exception.ts
@@ -2071,12 +2123,18 @@ msgstr "Konfigurace databáze je zakázána."
 msgid "Database Event"
 msgstr "Událost databáze"
 
+#. js-lingui-id: sdPN1F
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Dataset"
+msgstr ""
+
 #. js-lingui-id: Lhd0oQ
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workspace-member-standard-flat-field-metadata.util.ts
 msgid "Date format"
 msgstr "Formát data"
 
 #. js-lingui-id: 1lL5Iu
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -2189,6 +2247,7 @@ msgid "Delete"
 msgstr "Smazat"
 
 #. js-lingui-id: QN9ahV
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -3331,6 +3390,8 @@ msgid "iCal UID"
 msgstr "Identifikátor iCal"
 
 #. js-lingui-id: dFb5Nt
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
@@ -4498,6 +4559,7 @@ msgid "Last published Version Id"
 msgstr "ID poslední publikované verze"
 
 #. js-lingui-id: tGwswq
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -4530,6 +4592,7 @@ msgid "Last time the record was changed"
 msgstr "Poslední změna záznamu"
 
 #. js-lingui-id: o1zvNS
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -5031,6 +5094,7 @@ msgid "Multiple subscriptions found where one was expected."
 msgstr "Nalezeno více předplatných, očekávalo se jedno."
 
 #. js-lingui-id: 6YtxFj
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-company-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-list-standard-flat-field-metadata.util.ts
@@ -5308,9 +5372,15 @@ msgid "Note targets"
 msgstr "Cíle poznámek"
 
 #. js-lingui-id: tD4BxK
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
 msgid "Note Targets"
 msgstr "Cíle poznámek"
+
+#. js-lingui-id: 8XSi/X
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Note targets linked to the analysis"
+msgstr ""
 
 #. js-lingui-id: jDThel
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-standard-flat-field-metadata.util.ts
@@ -5351,6 +5421,7 @@ msgid "NoteTarget record position"
 msgstr "Pozice záznamu NoteTarget"
 
 #. js-lingui-id: mqwohF
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
@@ -6174,6 +6245,7 @@ msgid "Point of Contact"
 msgstr "Kontaktní osoba"
 
 #. js-lingui-id: p/78dY
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -6368,6 +6440,11 @@ msgstr "Záznam nesplňuje bezpečnostní omezení."
 #: src/engine/core-modules/record-crud/exceptions/record-crud.exception.ts
 msgid "Record not found."
 msgstr "Záznam nenalezen."
+
+#. js-lingui-id: awj87L
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Record position"
+msgstr ""
 
 #. js-lingui-id: LVUF8D
 #: src/engine/metadata-modules/view/services/view-widget-upsert.service.ts
@@ -6574,6 +6651,11 @@ msgstr "Formát odpovědi typu \"text\" by neměl obsahovat schéma"
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-event-participant-standard-flat-field-metadata.util.ts
 msgid "Response Status"
 msgstr "Stav odpovědi"
+
+#. js-lingui-id: RD6AE9
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Result"
+msgstr ""
 
 #. js-lingui-id: 1AYnSb
 #: src/engine/metadata-modules/page-layout-widget/constants/standard-page-layout-widget-titles.ts
@@ -6878,6 +6960,8 @@ msgstr "Hledat v Centru nápovědy"
 
 #. js-lingui-id: PdVIJC
 #: src/engine/metadata-modules/search-field-metadata/constants/search-vector-field.constants.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -7163,6 +7247,7 @@ msgid "State of the workflow run"
 msgstr "Stav běhu pracovního postupu"
 
 #. js-lingui-id: uAQUqI
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-campaign-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-task-standard-flat-field-metadata.util.ts
@@ -7296,6 +7381,11 @@ msgstr "Karta 1"
 #: src/engine/metadata-modules/page-layout/exceptions/page-layout.exception.ts
 msgid "Tab not found for widget duplication."
 msgstr "Karta pro duplikaci widgetu nenalezena."
+
+#. js-lingui-id: tN9Rjq
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Target Column"
+msgstr ""
 
 #. js-lingui-id: 5y3Wbw
 #: src/engine/twenty-orm/utils/compute-relation-connect-query-configs.util.ts
@@ -7482,6 +7572,11 @@ msgstr "Textový formát odpovědi by neměl mít schéma"
 msgid "The agent you are looking for could not be found. It may have been deleted or you may not have access to it."
 msgstr "Agenta, kterého hledáte, nelze nalézt. Mohl být smazán nebo k němu nemáte přístup."
 
+#. js-lingui-id: myEg8G
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "The analysis name"
+msgstr ""
+
 #. js-lingui-id: eC8p5b
 #: src/engine/metadata-modules/permissions/permissions.service.ts
 msgid "The API key does not have a valid role assigned. Please check your API key configuration."
@@ -7578,6 +7673,11 @@ msgstr "Tvůrce záznamu"
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-standard-flat-field-metadata.util.ts
 msgid "The current statuses of the workflow versions"
 msgstr "Aktuální stavy verzí pracovního postupu"
+
+#. js-lingui-id: fTSBpm
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "The dataset file to analyze"
+msgstr ""
 
 #. js-lingui-id: 0bo4Q0
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-standard-flat-field-metadata.util.ts
@@ -7758,6 +7858,11 @@ msgstr "APP_VERSION serveru není platná verze podle semver. Samohostované ins
 msgid "The singular and plural names cannot be the same for an object"
 msgstr "Jediné a množné názvy nemohou být pro objekt stejné"
 
+#. js-lingui-id: cvvluv
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "The target column for analysis"
+msgstr ""
+
 #. js-lingui-id: RCS0+I
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-campaign-standard-flat-field-metadata.util.ts
 msgid "The unsubscribe topic this campaign was sent under"
@@ -7774,6 +7879,16 @@ msgstr "Nahraný soubor neodpovídá deklarované velikosti. Zkuste prosím nahr
 #: src/engine/core-modules/file/file-upload/services/file-upload.service.ts
 msgid "The uploaded file is larger than declared."
 msgstr "Nahraný soubor je větší, než bylo deklarováno."
+
+#. js-lingui-id: zbfbir
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "The user who created the record"
+msgstr ""
+
+#. js-lingui-id: orqFKM
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "The user who last updated the record"
+msgstr ""
 
 #. js-lingui-id: 9bYo5E
 #: src/modules/connected-account-sync-webhooks/connected-account-sync-webhook.exception.ts
@@ -8409,6 +8524,11 @@ msgstr "Je vyžadováno nastavení dvoufaktorového ověřování."
 msgid "Two-factor authentication verification is required."
 msgstr "Je vyžadováno ověření v rámci dvoufaktorového ověřování."
 
+#. js-lingui-id: 1o5KT8
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
+msgid "Type of analysis to run"
+msgstr ""
+
 #. js-lingui-id: Qx95XY
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-morph-or-relation-flat-field-metadata.util.ts
 msgid "Udpated field is not a morph relation or a relation"
@@ -8499,6 +8619,7 @@ msgid "Update field restrictions only apply to updatable objects."
 msgstr "Omezení aktualizace polí platí pouze pro aktualizovatelné objekty."
 
 #. js-lingui-id: KQsreu
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-analysis-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts

@@ -272,6 +272,12 @@ msgstr "{0}/{1}"
 msgid "{0} opted out of this topic"
 msgstr "{0} 个已退出此主题订阅"
 
+#. js-lingui-id: /2HyaM
+#. placeholder {0}: file.rowCount
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "{0} rows"
+msgstr ""
+
 #. js-lingui-id: fvImQM
 #. placeholder {0}: formatNumber(contextStoreNumberOfSelectedRecords)
 #. placeholder {0}: formatNumber(totalCount ?? 0)
@@ -302,6 +308,14 @@ msgstr "{0} 个已全部退订"
 msgid "{0} used"
 msgstr "已使用{0}"
 
+#. js-lingui-id: 9qMj9R
+#. placeholder {0}: column.count
+#. placeholder {1}: column.missing
+#. placeholder {2}: column.unique
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "{0} values · {1} missing · {2} unique"
+msgstr ""
+
 #. js-lingui-id: izNf/z
 #. placeholder {0}: view.name
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
@@ -325,6 +339,12 @@ msgstr "{0} 个没有电子邮件"
 #: src/modules/object-record/record-field/ui/form-types/components/FormWorkspaceMemberFilterValueInput.tsx
 msgid "{0} workspace members"
 msgstr "{0} 位工作区成员"
+
+#. js-lingui-id: QfVEDr
+#. placeholder {0}: RUN_STAGES[runStage]
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
+msgid "{0}…"
+msgstr ""
 
 #. js-lingui-id: qdQhzv
 #: src/modules/views/advanced-filter-chip/components/AdvancedFilterChip.tsx
@@ -1010,6 +1030,11 @@ msgstr "删除账户"
 #: src/pages/settings/accounts/SettingsNewAccount.tsx
 msgid "Accounts"
 msgstr "账户"
+
+#. js-lingui-id: XmVUbU
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Accuracy"
+msgstr ""
 
 #. js-lingui-id: BXMLsb
 #: src/pages/settings/legal/SettingsLegalDpaNew.tsx
@@ -1887,6 +1912,12 @@ msgstr "AKIA..."
 msgid "Alert"
 msgstr "警报"
 
+#. js-lingui-id: 8JVc5x
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Algorithm"
+msgstr ""
+
 #. js-lingui-id: N40H+G
 #: src/modules/activities/files/components/FilesCard.tsx
 #: src/modules/activities/notes/components/NotesCard.tsx
@@ -2215,6 +2246,36 @@ msgstr "验证更改时发生内部错误。请联系支持。"
 msgid "An object with this name already exists"
 msgstr "带有此名称的对象已存在"
 
+#. js-lingui-id: QX6zrA
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Analysis"
+msgstr ""
+
+#. js-lingui-id: mdRY0Y
+#: src/modules/analysis/components/AnalysisResultsPanel.tsx
+msgid "Analysis failed"
+msgstr ""
+
+#. js-lingui-id: eJRwyv
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Analysis Name"
+msgstr ""
+
+#. js-lingui-id: XFHpYb
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Analysis options"
+msgstr ""
+
+#. js-lingui-id: vlTgXt
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Analysis Type"
+msgstr ""
+
+#. js-lingui-id: wYxpAk
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Analyze file"
+msgstr ""
+
 #. js-lingui-id: HZFm5R
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
 #: src/modules/settings/roles/role-settings/components/SettingsRoleSettingsDeleteRoleConfirmationModalSubtitle.tsx
@@ -2231,6 +2292,37 @@ msgstr "且"
 #: src/modules/settings/billing/components/internal/SettingsBillingPlanComparisonTable.tsx
 msgid "Annual"
 msgstr "按年"
+
+#. js-lingui-id: 1sBlJf
+#: src/modules/analysis/components/IsolationForestResults.tsx
+msgid "Anomalies Found"
+msgstr ""
+
+#. js-lingui-id: xss4I2
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Anomalies in numeric columns can reveal data entry errors, outliers, or fraud signals before they skew downstream models."
+msgstr ""
+
+#. js-lingui-id: 9c7z/U
+#: src/modules/analysis/components/IsolationForestResults.tsx
+msgid "Anomalous rows are highlighted in the file preview."
+msgstr ""
+
+#. js-lingui-id: mf6G/e
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "anomaly"
+msgstr ""
+
+#. js-lingui-id: vn5weK
+#. placeholder {0}: anomalousRowIndices.length
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "Anomaly {currentPosition} of {0}"
+msgstr ""
+
+#. js-lingui-id: zfse7N
+#: src/modules/analysis/components/IsolationForestResults.tsx
+msgid "Anomaly Summary"
+msgstr ""
 
 #. js-lingui-id: +qygei
 #: src/modules/ai/components/AiChatQuestionStatusRenderer.tsx
@@ -2943,6 +3035,7 @@ msgid "Axis name"
 msgstr "轴名称"
 
 #. js-lingui-id: iH8pgl
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
 #: src/modules/auth/sign-in-up/components/internal/SignInUpTwoFactorAuthenticationVerification.tsx
 #: src/modules/side-panel/components/SidePanelBackButton.tsx
 #: src/modules/spreadsheet-import/components/StepNavigationButton.tsx
@@ -3381,6 +3474,7 @@ msgid "Can't scan? Copy the"
 msgstr "无法扫描？复制"
 
 #. js-lingui-id: dEgA5A
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
 #: src/modules/applications/components/AuthorizeActionButtons.tsx
 #: src/modules/object-record/record-update-multiple/components/UpdateMultipleRecordsFooter.tsx
 #: src/modules/settings/billing/components/AddCreditCardModal.tsx
@@ -4005,10 +4099,31 @@ msgstr "颜色代码"
 msgid "Colors"
 msgstr "颜色"
 
+#. js-lingui-id: WtgDbl
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Column"
+msgstr ""
+
 #. js-lingui-id: P8gRog
 #: src/modules/spreadsheet-import/utils/setColumn.ts
 msgid "column data is not compatible with Multi-Select. Format required is '[\"option1\", \"option2\"]' or option1,option2."
 msgstr "列数据与多选不兼容。需要的格式为“[\"选项1\", \"选项2\"]”或 选项1,选项2。"
+
+#. js-lingui-id: kOplfe
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Column Statistics"
+msgstr ""
+
+#. js-lingui-id: /xTbaM
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "columns"
+msgstr ""
+
+#. js-lingui-id: jEu4bB
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Columns"
+msgstr ""
 
 #. js-lingui-id: 93hd3e
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/MatchColumnsStep.tsx
@@ -4211,6 +4326,7 @@ msgid "Configuration of this command menu item"
 msgstr "此命令菜单项的配置"
 
 #. js-lingui-id: iAL9tI
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationRegistrationGeneralTab.tsx
 msgid "Configure"
@@ -4371,6 +4487,11 @@ msgstr "确认升级"
 msgid "Confirming your payment"
 msgstr "正在确认您的付款"
 
+#. js-lingui-id: D8DZYf
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Confusion Matrix"
+msgstr ""
+
 #. js-lingui-id: LOM1MR
 #: src/pages/auth/Authorize.tsx
 msgid "Connect {appName} to your account"
@@ -4494,6 +4615,11 @@ msgstr "请联系您的管理员以继续使用工作流或 AI 功能。"
 #: src/modules/object-record/object-filter-dropdown/utils/getOperandLabel.ts
 msgid "Contains"
 msgstr "包含"
+
+#. js-lingui-id: IytqSk
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Contamination Rate"
+msgstr ""
 
 #. js-lingui-id: 4b3oEV
 #: src/modules/settings/applications/components/SettingsApplicationAboutSidebar.tsx
@@ -4709,6 +4835,11 @@ msgstr "核心"
 msgid "Core Objects"
 msgstr "核心对象"
 
+#. js-lingui-id: lz4Gel
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Correlation Matrix"
+msgstr ""
+
 #. js-lingui-id: I99Miw
 #: src/modules/ai/components/internal/AiChatContextUsageButton.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsAiAgentDetail.tsx
@@ -4837,6 +4968,7 @@ msgid "Couldn't update favorite"
 msgstr "无法更新收藏"
 
 #. js-lingui-id: wBMjJ2
+#: src/modules/analysis/components/DescriptiveResults.tsx
 #: src/modules/object-record/record-board/record-board-column/components/RecordBoardColumnHeaderAggregateDropdownContent.tsx
 #: src/modules/object-record/record-board/record-board-column/components/RecordBoardColumnHeaderAggregateDropdownMenuContent.tsx
 #: src/modules/object-record/record-table/record-table-footer/components/RecordTableColumnAggregateFooterDropdownContent.tsx
@@ -5616,6 +5748,18 @@ msgstr "数据库配置当前已禁用。"
 msgid "Database event"
 msgstr "数据库事件"
 
+#. js-lingui-id: sdPN1F
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Dataset"
+msgstr ""
+
+#. js-lingui-id: bG6PJ+
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Dataset info"
+msgstr ""
+
 #. js-lingui-id: mYGY3B
 #: src/modules/ai/constants/AgentChatThreadGroupByLabels.ts
 #: src/modules/object-record/record-board/record-board-column/components/RecordBoardColumnHeaderAggregateDropdownContent.tsx
@@ -5903,6 +6047,8 @@ msgstr "删除"
 #: src/modules/views/view-picker/components/ViewPickerOptionDropdown.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowStepFooter.tsx
 #: src/modules/workflow/workflow-steps/filters/components/WorkflowStepFilterOptionsDropdown.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDangerZone.tsx
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
@@ -6454,6 +6600,7 @@ msgstr "降级为按月计费"
 #. js-lingui-id: mzI/c+
 #: src/modules/activities/files/components/AttachmentDropdown.tsx
 #: src/modules/activities/files/components/DocumentViewer.tsx
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
 #: src/modules/settings/legal/components/SettingsDpaAgreementRow.tsx
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationGeneralInfo.tsx
 msgid "Download"
@@ -6463,6 +6610,11 @@ msgstr "下载"
 #: src/modules/ai/components/CodeExecutionDisplay.tsx
 msgid "Download {filename}"
 msgstr "下载 {filename}"
+
+#. js-lingui-id: kodV18
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "Download CSV"
+msgstr ""
 
 #. js-lingui-id: WcWS//
 #: src/modules/settings/security/components/SSO/SettingsSSOSAMLForm.tsx
@@ -6508,6 +6660,11 @@ msgstr "已生成邮件草稿"
 #: src/modules/ai/constants/action-tool-status-labels.constant.ts
 msgid "Drafting email"
 msgstr "正在生成邮件草稿"
+
+#. js-lingui-id: sMkfAD
+#: src/modules/analysis/components/CsvUploadStep.tsx
+msgid "Drag and drop a CSV file here, or click to browse"
+msgstr ""
 
 #. js-lingui-id: XKUtpI
 #: src/modules/activities/files/components/DropZone.tsx
@@ -6628,6 +6785,11 @@ msgstr "例如 my-workspace"
 #: src/pages/settings/admin-panel/SettingsAdminNewAiProvider.tsx
 msgid "e.g. OpenAI EU"
 msgstr "例如：OpenAI EU"
+
+#. js-lingui-id: eMZDmw
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "e.g. species, churn, category"
+msgstr ""
 
 #. js-lingui-id: p5P8NB
 #: src/pages/settings/ai/components/SettingsAiOverviewTab.tsx
@@ -7884,6 +8046,11 @@ msgstr "表达式"
 msgid "Extended"
 msgstr "已延长"
 
+#. js-lingui-id: mHTfha
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "F1 Score"
+msgstr ""
+
 #. js-lingui-id: 7Bj3x9
 #: src/modules/ai/components/CodeExecutionDisplay.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
@@ -8254,6 +8421,12 @@ msgstr "功能标志"
 msgid "Feature Flags"
 msgstr "功能标志"
 
+#. js-lingui-id: RDQRca
+#: src/modules/analysis/components/ClassificationResults.tsx
+#: src/modules/analysis/components/IsolationForestResults.tsx
+msgid "Feature Importance"
+msgstr ""
+
 #. js-lingui-id: PpZkda
 #: src/pages/settings/community/SettingsCommunity.tsx
 msgid "Features"
@@ -8324,6 +8497,7 @@ msgid "fields"
 msgstr "字段"
 
 #. js-lingui-id: vF68cg
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownDefaultView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownFieldsContent.tsx
@@ -8405,6 +8579,11 @@ msgstr "第五"
 msgid "Fifth"
 msgstr "第五"
 
+#. js-lingui-id: J2eKUI
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "File"
+msgstr ""
+
 #. js-lingui-id: sWmIx3
 #: src/modules/activities/emails/hooks/useUploadEmailAttachment.ts
 #: src/modules/advanced-text-editor/hooks/useUploadWorkflowFile.ts
@@ -8432,6 +8611,16 @@ msgstr "文件标签"
 #: src/modules/ui/field/display/components/FileChip.tsx
 msgid "File no longer exists - {label}"
 msgstr "文件已不存在 - {label}"
+
+#. js-lingui-id: cfBi2z
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "File options"
+msgstr ""
+
+#. js-lingui-id: q7Xao4
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Files to analyze"
+msgstr ""
 
 #. js-lingui-id: BZGmTs
 #: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionTestTab.tsx
@@ -9186,6 +9375,11 @@ msgstr "在电子邮件域发现中隐藏。成员和受邀者仍然可以看到
 msgid "Hide"
 msgstr "隐藏"
 
+#. js-lingui-id: Lw8Vzy
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Hide anomalies"
+msgstr ""
+
 #. js-lingui-id: MuEcPp
 #: src/modules/side-panel/pages/page-layout/constants/settings/ChartConfigurationSettingLabels.ts
 msgid "Hide empty category"
@@ -9216,6 +9410,11 @@ msgstr "隐藏标签"
 #: src/modules/settings/data-model/object-details/components/tabs/SettingsObjectIndexesSection.tsx
 msgid "Hide system indexes"
 msgstr "隐藏系统索引"
+
+#. js-lingui-id: s4Ece4
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Highlight anomalies"
+msgstr ""
 
 #. js-lingui-id: 1ETc0T
 #: src/pages/settings/community/SettingsCommunity.tsx
@@ -11155,6 +11354,7 @@ msgid "Match Columns"
 msgstr "匹配列"
 
 #. js-lingui-id: CK1KXz
+#: src/modules/analysis/components/DescriptiveResults.tsx
 #: src/modules/object-record/record-board/record-board-column/utils/getAggregateOperationLabel.ts
 #: src/modules/object-record/record-board/record-board-column/utils/getAggregateOperationShortLabel.ts
 #: src/modules/side-panel/pages/page-layout/constants/settings/RangeMaxSetting.ts
@@ -11257,6 +11457,11 @@ msgstr "我"
 #: src/modules/settings/roles/role-permissions/object-level-permissions/record-level-permissions/components/SettingsRolePermissionsObjectLevelRecordLevelPermissionMeValueSelect.tsx
 msgid "Me (User ID)"
 msgstr "我 (用户 ID)"
+
+#. js-lingui-id: Q2vMbi
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Mean"
+msgstr ""
 
 #. js-lingui-id: IAcjOi
 #: src/modules/advanced-text-editor/extensions/slash-command/DefaultSlashCommands.ts
@@ -11375,6 +11580,7 @@ msgid "Microsoft"
 msgstr "微软"
 
 #. js-lingui-id: eTUF28
+#: src/modules/analysis/components/DescriptiveResults.tsx
 #: src/modules/object-record/record-board/record-board-column/utils/getAggregateOperationLabel.ts
 #: src/modules/object-record/record-board/record-board-column/utils/getAggregateOperationShortLabel.ts
 #: src/modules/side-panel/pages/page-layout/constants/settings/RangeMinSetting.ts
@@ -11406,6 +11612,11 @@ msgstr "分钟"
 msgid "Minutes between triggers"
 msgstr "触发之间的分钟数"
 
+#. js-lingui-id: VU3Nrn
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Missing"
+msgstr ""
+
 #. js-lingui-id: cOFpUq
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionCreateCalendarEvent.tsx
 msgid "Missing calendar permission."
@@ -11415,6 +11626,11 @@ msgstr "缺少日历权限。"
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionEmailBase.tsx
 msgid "Missing email draft permission."
 msgstr "缺少电子邮件草稿权限。"
+
+#. js-lingui-id: Xf1Xmy
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Missing values affect which analyses can run reliably — descriptive stats always report them explicitly."
+msgstr ""
 
 #. js-lingui-id: mibKsa
 #: src/modules/activities/tasks/components/TaskGroups.tsx
@@ -11453,6 +11669,11 @@ msgstr "模型 ID"
 #: src/pages/settings/admin-panel/SettingsAdminNewAiModel.tsx
 msgid "Model ID is required"
 msgstr "模型 ID 为必填项"
+
+#. js-lingui-id: O9AxPV
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Model Performance"
+msgstr ""
 
 #. js-lingui-id: //nm2/
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
@@ -11648,6 +11869,11 @@ msgstr "必须是一个包含有效 URL 和标签的对象数组（格式：'[{\
 msgid "must be an array of valid emails"
 msgstr "必须是有效电子邮件的数组"
 
+#. js-lingui-id: TwDvtZ
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "My Analysis"
+msgstr ""
+
 #. js-lingui-id: OJCJh9
 #: src/pages/settings/applications/tabs/SettingsApplicationsDeveloperTab.tsx
 msgid "My apps"
@@ -11840,6 +12066,12 @@ msgstr "新建 AI 聊天"
 #: src/pages/settings/admin-panel/SettingsAdminNewAiProvider.tsx
 msgid "New AI Provider"
 msgstr "新建 AI 提供商"
+
+#. js-lingui-id: TQVYwn
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "New Analysis"
+msgstr ""
 
 #. js-lingui-id: 2qr/61
 #: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
@@ -12044,6 +12276,11 @@ msgstr "新闻简报"
 msgid "Next"
 msgstr "下一个"
 
+#. js-lingui-id: TQwTeK
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "Next anomaly"
+msgstr ""
+
 #. js-lingui-id: L0DCk4
 #: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
 msgid "Next charge {totalRenewDate}. Invoice amount may vary if you add members or credits between periods"
@@ -12147,6 +12384,11 @@ msgstr "此工作区未启用任何 AI 模型。"
 #: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
 msgid "No AI usage data recorded yet."
 msgstr "尚未记录任何 AI 用量数据。"
+
+#. js-lingui-id: aEggo1
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "No analyses yet"
+msgstr ""
 
 #. js-lingui-id: 9mx36q
 #: src/modules/settings/roles/role-assignment/components/SettingsRoleAssignmentTable.tsx
@@ -12645,6 +12887,12 @@ msgstr "无结果"
 msgid "No results found"
 msgstr "未找到结果"
 
+#. js-lingui-id: xwqrbE
+#: src/modules/analysis/components/AnalysisResultsPanel.tsx
+#: src/modules/analysis/components/AnalysisResultsPanel.tsx
+msgid "No results yet"
+msgstr ""
+
 #. js-lingui-id: FVzmGK
 #: src/modules/settings/members/components/MemberPermissionsTab.tsx
 msgid "No role assigned to this member"
@@ -12654,6 +12902,11 @@ msgstr "未为该成员分配角色"
 #: src/modules/settings/roles/components/SettingsRolesList.tsx
 msgid "No roles found"
 msgstr "未找到角色"
+
+#. js-lingui-id: 1wmUGO
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "No rows to preview"
+msgstr ""
 
 #. js-lingui-id: mmm8hk
 #: src/modules/spreadsheet-import/steps/components/ValidationStep/ValidationStep.tsx
@@ -12947,6 +13200,11 @@ msgstr "审计日志的保留天数（30-1095 天）"
 #: src/modules/settings/data-model/fields/forms/number/components/SettingsDataModelFieldNumberForm.tsx
 msgid "Number of decimals"
 msgstr "小数位数"
+
+#. js-lingui-id: rZbHpn
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Number of Estimators"
+msgstr ""
 
 #. js-lingui-id: n49P/Y
 #: src/modules/workflow/workflow-steps/workflow-actions/find-records-action/components/WorkflowEditActionFindRecords.tsx
@@ -13868,6 +14126,11 @@ msgstr "选择一个 {objectLabel} 记录"
 msgid "Pick a connected account or set a workspace member as variable"
 msgstr "选择一个已连接的帐户，或将某个工作区成员设置为变量"
 
+#. js-lingui-id: NpEQ+D
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Pick a dataset from the list, then run an analysis on it."
+msgstr ""
+
 #. js-lingui-id: JqqNlC
 #: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
 msgid "Pick a view"
@@ -14094,6 +14357,11 @@ msgstr "在新工作区上预安装"
 msgid "Pre-installed only"
 msgstr "仅限预装"
 
+#. js-lingui-id: FlMg9W
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Precision"
+msgstr ""
+
 #. js-lingui-id: 0Lqxjs
 #: src/modules/auth/sign-in-up/constants/WorkspaceActivationMessages.tsx
 msgid "Prefilling your <0>workspace data</0>..."
@@ -14136,6 +14404,11 @@ msgstr "上一个"
 #: src/modules/ai/utils/groupThreadsByDate.ts
 msgid "Previous 7 days"
 msgstr "过去7天"
+
+#. js-lingui-id: PDJA/s
+#: src/modules/analysis/components/AnalysisFilePreview.tsx
+msgid "Previous anomaly"
+msgstr ""
 
 #. js-lingui-id: KaMwgJ
 #: src/modules/object-record/record-calendar/components/RecordCalendarTopBar.tsx
@@ -14466,6 +14739,11 @@ msgstr "推理过程"
 msgid "Reauthorize"
 msgstr "重新授权"
 
+#. js-lingui-id: EjJl4z
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Recall"
+msgstr ""
+
 #. js-lingui-id: BT7pY+
 #: src/modules/settings/profile/components/SetOrChangePassword.tsx
 msgid "Receive an email containing password set link"
@@ -14475,6 +14753,11 @@ msgstr "接收包含密码更新链接的电子邮件"
 #: src/modules/settings/profile/components/SetOrChangePassword.tsx
 msgid "Receive an email containing password update link"
 msgstr "接收包含密码更新链接的电子邮件"
+
+#. js-lingui-id: le4Y9Y
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Recent analyses"
+msgstr ""
 
 #. js-lingui-id: ZVr1+K
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminWorkerMetricsGraph.tsx
@@ -15123,8 +15406,10 @@ msgid "Result"
 msgstr "结果"
 
 #. js-lingui-id: kx0s+n
+#: src/modules/analysis/components/AnalysisResultsPanel.tsx
 #: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemRecordSubPage.tsx
 #: src/modules/side-panel/pages/search/components/SidePanelSearchRecordsPage.tsx
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
 msgid "Results"
 msgstr "结果"
 
@@ -15324,6 +15609,16 @@ msgstr "行级权限"
 msgid "Row-level security"
 msgstr "行级安全"
 
+#. js-lingui-id: OXexf7
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "rows"
+msgstr ""
+
+#. js-lingui-id: hL5+/P
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Rows"
+msgstr ""
+
 #. js-lingui-id: 7jTlsu
 #: src/modules/settings/data-model/fields/forms/select/components/SettingsDataModelFieldSelectFormOptionRow.tsx
 msgid "Ruby"
@@ -15339,6 +15634,11 @@ msgstr ""
 msgid "Run a workflow and return here to view its executions"
 msgstr "运行工作流并返回此处查看其执行情况"
 
+#. js-lingui-id: jKapIA
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
+msgid "Run Analysis"
+msgstr ""
+
 #. js-lingui-id: rRyKdg
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useActionRolePermissionFlagConfig.ts
 msgid "Run code to analyze files and data"
@@ -15353,6 +15653,12 @@ msgstr "运行函数"
 #: src/modules/ai/utils/tool-display/build-generic-tool-status-message.util.ts
 msgid "Running {label}"
 msgstr "正在运行 {label}"
+
+#. js-lingui-id: 5vPmiE
+#: src/modules/analysis/components/AnalysisResultsPanel.tsx
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
+msgid "Running analysis…"
+msgstr ""
 
 #. js-lingui-id: YmLrjz
 #: src/modules/ai/utils/tool-display/get-tool-display-message.ts
@@ -15952,6 +16258,16 @@ msgstr "从上一步选择一个字段"
 #: src/modules/page-layout/widgets/field/components/FieldWidget.tsx
 msgid "Select a field to display in this widget"
 msgstr "选择要在此小部件中显示的字段"
+
+#. js-lingui-id: jDn4An
+#: src/pages/analysis/AnalysisWorkspacePage.tsx
+msgid "Select a file to preview its contents"
+msgstr ""
+
+#. js-lingui-id: U8zfLT
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Select a file to see its metadata"
+msgstr ""
 
 #. js-lingui-id: rHNnAT
 #: src/pages/settings/admin-panel/SettingsAdminNewAiModel.tsx
@@ -16571,6 +16887,7 @@ msgid "Sixth"
 msgstr "第六"
 
 #. js-lingui-id: Cj2Gtd
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
 #: src/pages/settings/layout/SettingsLayoutViewDetail.tsx
 msgid "Size"
 msgstr "大小"
@@ -16943,6 +17260,11 @@ msgstr "状态"
 msgid "Stay up to date with product news and community updates."
 msgstr "及时获取产品资讯和社区更新。"
 
+#. js-lingui-id: DkWqjA
+#: src/modules/analysis/components/DescriptiveResults.tsx
+msgid "Std"
+msgstr ""
+
 #. js-lingui-id: lATgy+
 #: src/modules/workflow/workflow-steps/filters/components/WorkflowStepFilterGroupOptionsDropdown.tsx
 msgid "Step filter group options"
@@ -17194,6 +17516,11 @@ msgstr "星期日"
 msgid "Support"
 msgstr "支持"
 
+#. js-lingui-id: 2xqUQI
+#: src/modules/analysis/components/CsvUploadStep.tsx
+msgid "Supported format: .csv (max 100MB)"
+msgstr ""
+
 #. js-lingui-id: omBFwv
 #: src/pages/settings/admin-panel/SettingsAdminNewAiModel.tsx
 msgid "Supported input types"
@@ -17383,6 +17710,16 @@ msgstr "表格、看板、日历"
 msgid "Take ownership of an app you published to npm. Enter its exact package name (or universal identifier) to find it."
 msgstr ""
 
+#. js-lingui-id: Yrrg+y
+#: src/modules/analysis/components/ClassificationResults.tsx
+msgid "Target"
+msgstr ""
+
+#. js-lingui-id: tN9Rjq
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Target Column"
+msgstr ""
+
 #. js-lingui-id: sceIIK
 #: src/modules/settings/data-model/fields/forms/morph-relation/components/SettingsDataModelFieldRelationJunctionForm.tsx
 msgid "Target relation on Junction Object"
@@ -17442,6 +17779,11 @@ msgstr "服务条款"
 #: src/pages/settings/logic-functions/SettingsLogicFunctionDetail.tsx
 msgid "Test"
 msgstr "测试"
+
+#. js-lingui-id: yuNplX
+#: src/modules/analysis/components/AnalysisConfigStep.tsx
+msgid "Test Split"
+msgstr ""
 
 #. js-lingui-id: 3nWPN6
 #: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionTestTab.tsx
@@ -17865,6 +18207,12 @@ msgstr "此功能是企业计划的一部分。"
 #: src/modules/activities/files/components/DocumentViewer.tsx
 msgid "This file cannot be previewed because it is hosted locally."
 msgstr "该文件无法预览，因为它在本地托管。"
+
+#. js-lingui-id: q80dtG
+#. placeholder {0}: file.rowCount
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "This file has {0} rows; analyses run on the full dataset, not just the preview shown here."
+msgstr ""
 
 #. js-lingui-id: hMvPrD
 #: src/modules/activities/files/components/DocumentViewer.tsx
@@ -18294,6 +18642,11 @@ msgstr "总成本"
 msgid "Total Jobs"
 msgstr "总任务"
 
+#. js-lingui-id: JDgza+
+#: src/modules/analysis/components/IsolationForestResults.tsx
+msgid "Total Rows"
+msgstr ""
+
 #. js-lingui-id: /kXBrK
 #: src/modules/ai/components/RoutingDebugDisplay.tsx
 msgid "Total time"
@@ -18522,6 +18875,7 @@ msgid "Two-factor authentication setup completed successfully!"
 msgstr "双因素身份验证设置成功完成！"
 
 #. js-lingui-id: +zy2Nq
+#: src/modules/analysis/components/DescriptiveResults.tsx
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
 #: src/modules/settings/data-model/indexes/forms/components/SettingsObjectIndexOptionsForm.tsx
 #: src/modules/settings/data-model/object-details/components/SettingsObjectRelationsTable.tsx
@@ -18659,11 +19013,17 @@ msgid "Uninstalling..."
 msgstr "正在卸载..."
 
 #. js-lingui-id: wSXm5S
+#: src/modules/analysis/components/DescriptiveResults.tsx
 #: src/modules/object-record/record-board/record-board-column/utils/getAggregateOperationShortLabel.ts
 #: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldIsUniqueForm.tsx
 #: src/pages/settings/data-model/SettingsObjectIndexTable.tsx
 msgid "Unique"
 msgstr "唯一"
+
+#. js-lingui-id: +MLDET
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Unique counts tell you whether a column is an identifier, a category, or a continuous measurement."
+msgstr ""
 
 #. js-lingui-id: +WHV0k
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionUpsertRecord.tsx
@@ -19106,6 +19466,16 @@ msgstr "上传"
 msgid "Upload .xlsx, .xls or .csv file"
 msgstr "上传 .xlsx，.xls 或 .csv 文件"
 
+#. js-lingui-id: hFpklX
+#: src/modules/analysis/components/AnalysisSidePanel.tsx
+msgid "Upload CSV"
+msgstr ""
+
+#. js-lingui-id: yFymvc
+#: src/modules/analysis/components/CsvUploadStep.tsx
+msgid "Upload CSV file"
+msgstr ""
+
 #. js-lingui-id: 2IXDgU
 #: src/modules/activities/emails/components/EmailAttachmentsField.tsx
 #: src/modules/advanced-text-editor/components/WorkflowSendEmailAttachments.tsx
@@ -19144,6 +19514,11 @@ msgstr "上传头像"
 #: src/modules/settings/security/components/SSO/SettingsSSOSAMLForm.tsx
 msgid "Upload the XML file with your connection infos"
 msgstr "上传包含连接信息的 XML 文件"
+
+#. js-lingui-id: 3wG7HI
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Uploaded"
+msgstr ""
 
 #. js-lingui-id: XzIB4l
 #: src/modules/apollo/services/apollo.factory.ts
@@ -20050,6 +20425,11 @@ msgstr "此模型是否支持思维链推理"
 #: src/modules/workflow/workflow-variables/utils/getWorkflowVariableSpecialItems.ts
 msgid "Whole list"
 msgstr "整个列表"
+
+#. js-lingui-id: Cl+jVb
+#: src/modules/analysis/components/AnalysisFieldMetadataDrawer.tsx
+msgid "Why this matters"
+msgstr ""
 
 #. js-lingui-id: dmoPOu
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
