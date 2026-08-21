@@ -20,6 +20,10 @@
 
 <br />
 
+# Glassbox Memo
+
+See docs from Lukas.
+
 # Why Twenty
 
 Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.
