@@ -36,6 +36,31 @@ export const STANDARD_PAGE_LAYOUT_UNIVERSAL_IDENTIFIERS = {
       },
     },
   },
+  analysisRecordPage: {
+    universalIdentifier: '20202020-a1f0-4001-8001-a0a1a2a3a001',
+    tabs: {
+      home: {
+        universalIdentifier: '20202020-a1f0-4001-8001-a0a1a2a3a011',
+        widgets: {},
+      },
+      files: {
+        universalIdentifier: '20202020-a1f0-4001-8001-a0a1a2a3a012',
+        widgets: {
+          files: {
+            universalIdentifier: '20202020-a1f0-4001-8001-a0a1a2a3a021',
+          },
+        },
+      },
+      details: {
+        universalIdentifier: '20202020-a1f0-4001-8001-a0a1a2a3a013',
+        widgets: {
+          fields: {
+            universalIdentifier: '20202020-a1f0-4001-8001-a0a1a2a3a022',
+          },
+        },
+      },
+    },
+  },
   companyRecordPage: {
     universalIdentifier: '20202020-a101-4001-8001-c0aba11c0001',
     tabs: {

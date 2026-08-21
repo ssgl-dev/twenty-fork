@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
 import { isNonEmptyString } from '@sniptt/guards';
-import { printSchema } from 'graphql';
+import { buildSchema, printSchema, type GraphQLSchema } from 'graphql';
 import { isDefined } from 'twenty-shared/utils';
 
 import { ScalarsExplorerService } from 'src/engine/api/graphql/services/scalars-explorer.service';
@@ -23,6 +23,7 @@ import { TWENTY_STANDARD_APPLICATION } from 'src/engine/workspace-manager/twenty
 export type WorkspaceGraphqlSchemaSDLResult = {
   sdl: string;
   usedScalarNames: string[];
+  metadataVersion: number;
   flatObjectMetadataMaps: FlatEntityMaps<FlatObjectMetadata>;
   flatFieldMetadataMaps: FlatEntityMaps<FlatFieldMetadata>;
   flatIndexMaps: FlatEntityMaps<FlatIndexMetadata>;
@@ -30,6 +31,14 @@ export type WorkspaceGraphqlSchemaSDLResult = {
 
 @Injectable()
 export class WorkspaceGraphqlSchemaSDLService {
+  // In-process memoization of the introspection GraphQL schema, keyed by
+  // workspace + metadata version + application. Avoids re-parsing the full SDL
+  // with buildSchema() on every introspection query. Bounded FIFO eviction so
+  // it cannot grow unbounded across many workspaces/versions.
+  private readonly introspectionSchemaCache = new Map<string, GraphQLSchema>();
+
+  private static readonly INTROSPECTION_SCHEMA_CACHE_MAX_ENTRIES = 50;
+
   constructor(
     private readonly scalarsExplorerService: ScalarsExplorerService,
     private readonly workspaceGraphQLSchemaGenerator: WorkspaceGraphQLSchemaGenerator,
@@ -167,10 +176,54 @@ export class WorkspaceGraphqlSchemaSDLService {
     return {
       sdl,
       usedScalarNames,
+      metadataVersion,
       flatObjectMetadataMaps,
       flatFieldMetadataMaps,
       flatIndexMaps,
     };
+  }
+
+  async getOrComputeSchema(
+    workspace: FlatWorkspace,
+    applicationId?: string,
+  ): Promise<GraphQLSchema | null> {
+    const schemaSDLResult = await this.getOrComputeSchemaSDL(
+      workspace,
+      applicationId,
+    );
+
+    if (!isDefined(schemaSDLResult)) {
+      return null;
+    }
+
+    const cacheKey = [
+      workspace.id,
+      schemaSDLResult.metadataVersion,
+      applicationId ?? '',
+    ].join(':');
+
+    const cachedSchema = this.introspectionSchemaCache.get(cacheKey);
+
+    if (isDefined(cachedSchema)) {
+      return cachedSchema;
+    }
+
+    const schema = buildSchema(schemaSDLResult.sdl);
+
+    this.introspectionSchemaCache.set(cacheKey, schema);
+
+    if (
+      this.introspectionSchemaCache.size >
+      WorkspaceGraphqlSchemaSDLService.INTROSPECTION_SCHEMA_CACHE_MAX_ENTRIES
+    ) {
+      const oldestKey = this.introspectionSchemaCache.keys().next().value;
+
+      if (isDefined(oldestKey)) {
+        this.introspectionSchemaCache.delete(oldestKey);
+      }
+    }
+
+    return schema;
   }
 
   private reconcileObjectFieldIdsWithFilteredFieldMaps(

@@ -8,6 +8,7 @@ export const DEFAULT_FAST_MODELS = [
   'google/gemini-3-flash-preview',
   'xai/grok-4-1-fast',
   'mistral/mistral-large-latest',
+  'deepseek/deepseek-v4-flash',
 ];
 
 export const DEFAULT_SMART_MODELS = [
@@ -25,6 +26,7 @@ export const DEFAULT_RECOMMENDED_MODELS = [
   'anthropic/claude-sonnet-4-6',
   'google/gemini-3.1-pro-preview',
   'xai/grok-4',
+  'deepseek/deepseek-v4-flash',
 ];
 
 export const DEFAULT_DISABLED_MODELS: string[] = [];

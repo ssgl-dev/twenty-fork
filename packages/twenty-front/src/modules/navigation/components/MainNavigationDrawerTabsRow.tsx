@@ -36,7 +36,7 @@ const StyledRow = styled.div<{ isExpanded: boolean }>`
   width: ${({ isExpanded }) => (isExpanded ? '100%' : 'max-content')};
 `;
 
-const StyledTabsPill = styled.div`
+const StyledTabsPill = styled.div<{ tabCount: number }>`
   align-items: center;
   background: ${themeCssVariables.background.secondary};
   border: 1px solid ${themeCssVariables.border.color.medium};
@@ -48,7 +48,8 @@ const StyledTabsPill = styled.div`
   gap: ${themeCssVariables.spacing[0.5]};
   height: ${themeCssVariables.spacing[7]};
   padding: 3px;
-  width: ${themeCssVariables.spacing[18]};
+  width: ${({ tabCount }) =>
+    `calc(${tabCount} * ${themeCssVariables.spacing[9]})`};
 `;
 
 const StyledTabWrapper = styled.div<{ isActive: boolean }>`
@@ -160,10 +161,6 @@ export const MainNavigationDrawerTabsRow = ({
 
   const isExpanded = isNavigationDrawerExpanded || isMobile;
 
-  if (!hasAiPermission) {
-    return null;
-  }
-
   const handleTabClick = (tab: NavigationDrawerActiveTab) => () => {
     setNavigationDrawerActiveTab(tab);
   };
@@ -196,7 +193,11 @@ export const MainNavigationDrawerTabsRow = ({
   return (
     <StyledRow isExpanded={isExpanded}>
       <NavigationDrawerAnimatedCollapseWrapper>
-        <StyledTabsPill role="tablist" aria-label={t`Navigation tabs`}>
+        <StyledTabsPill
+          role="tablist"
+          aria-label={t`Navigation tabs`}
+          tabCount={hasAiPermission ? 2 : 1}
+        >
           <StyledTabWrapper
             isActive={
               navigationDrawerActiveTab ===
@@ -227,6 +228,7 @@ export const MainNavigationDrawerTabsRow = ({
               />
             </StyledTabIcon>
           </StyledTabWrapper>
+          {hasAiPermission && (
           <StyledTabWrapper
             isActive={
               navigationDrawerActiveTab ===
@@ -257,8 +259,10 @@ export const MainNavigationDrawerTabsRow = ({
               />
             </StyledTabIcon>
           </StyledTabWrapper>
+          )}
         </StyledTabsPill>
       </NavigationDrawerAnimatedCollapseWrapper>
+      {hasAiPermission && (
       <StyledNewChatButtonWrapper isExpanded={isExpanded}>
         <StyledNewChatButton
           role="button"
@@ -273,6 +277,7 @@ export const MainNavigationDrawerTabsRow = ({
           {isExpanded && <OverflowingTextWithTooltip text={t`New chat`} />}
         </StyledNewChatButton>
       </StyledNewChatButtonWrapper>
+      )}
     </StyledRow>
   );
 };

@@ -1,0 +1,69 @@
+mutation CreateAnalysis($input: CreateAnalysisInput!) {
+  createAnalysis(input: $input) {
+    id
+    name
+    csvFileId
+    analysisType
+    targetColumn
+    config
+    status
+    createdAt
+    updatedAt
+  }
+}
+
+mutation RunAnalysis($analysisId: String!) {
+  runAnalysis(analysisId: $analysisId) {
+    id
+    analysisId
+    status
+    startedAt
+    completedAt
+    result
+    errorMessage
+  }
+}
+
+mutation DeleteAnalysis($id: String!) {
+  deleteAnalysis(id: $id)
+}
+
+query GetAnalyses {
+  analyses {
+    id
+    name
+    csvFileId
+    analysisType
+    targetColumn
+    config
+    status
+    createdAt
+    updatedAt
+  }
+}
+
+query GetAnalysis($id: String!) {
+  analysis(id: $id) {
+    id
+    name
+    csvFileId
+    analysisType
+    targetColumn
+    config
+    status
+    createdAt
+    updatedAt
+  }
+}
+
+query GetAnalysisRun($id: String!) {
+  analysisRun(id: $id) {
+    id
+    analysisId
+    status
+    startedAt
+    completedAt
+    result
+    errorMessage
+  }
+}

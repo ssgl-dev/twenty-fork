@@ -64,4 +64,16 @@ export const buildNoteTargetStandardFlatIndexMetadatas = ({
     twentyStandardApplicationId,
     now,
   }),
+  analysisIdIndex: createStandardIndexFlatMetadata({
+    objectName,
+    workspaceId,
+    context: {
+      indexName: 'analysisIdIndex',
+      relatedFieldNames: ['targetAnalysis'],
+    },
+    standardObjectMetadataRelatedEntityIds,
+    dependencyFlatEntityMaps,
+    twentyStandardApplicationId,
+    now,
+  }),
 });

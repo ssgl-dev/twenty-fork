@@ -4,7 +4,6 @@ import { type MessageDescriptor } from '@lingui/core';
 import { type Request } from 'express';
 import {
   GraphQLError,
-  buildSchema,
   execute,
   type DocumentNode,
   type FieldNode,
@@ -291,17 +290,16 @@ export class DirectExecutionService {
         return null;
       }
 
-      const schemaSDLResult =
-        await this.workspaceGraphqlSchemaSDLService.getOrComputeSchemaSDL(
+      const schema =
+        await this.workspaceGraphqlSchemaSDLService.getOrComputeSchema(
           req.workspace,
           req.application?.id ?? undefined,
         );
 
-      if (!isDefined(schemaSDLResult)) {
+      if (!isDefined(schema)) {
         return null;
       }
 
-      const schema = buildSchema(schemaSDLResult.sdl);
       const result = await execute({
         schema,
         document,

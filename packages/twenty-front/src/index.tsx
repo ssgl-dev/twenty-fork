@@ -1,6 +1,10 @@
 import ReactDOM from 'react-dom/client';
 
 import { App } from '@/app/components/App';
+import {
+  hydrateAnalysisStorage,
+  migrateAnalysisStateFromLocalStorage,
+} from '@/analysis/states/analysisStorage';
 import { migrateTokenPairCookieToLocalStorage } from '@/auth/utils/migrateTokenPairCookieToLocalStorage';
 import { hydrateMetadataStore } from '@/metadata-store/storage/metadataStoreStorage';
 import '@fontsource/dm-mono/400.css';
@@ -27,4 +31,12 @@ const renderApp = () => {
   root.render(<App />);
 };
 
-hydrateMetadataStore().then(renderApp, renderApp);
+const hydrateStores = async () => {
+  // Migrate any legacy localStorage analysis state into IndexedDB first, then
+  // hydrate the atoms so persisted analyses/datasets/runs are available.
+  await migrateAnalysisStateFromLocalStorage();
+  await hydrateAnalysisStorage();
+  await hydrateMetadataStore();
+};
+
+hydrateStores().then(renderApp, renderApp);

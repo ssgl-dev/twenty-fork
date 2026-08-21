@@ -269,6 +269,12 @@ export class CodeInterpreterTool implements Tool {
 
     const inputFiles: InputFile[] = [];
 
+    // Attachments uploaded in the agent chat live under `agent-chat/`, while
+    // files uploaded through the app (e.g. analysis datasets) live under
+    // `files-field/`. Try every folder so any workspace file can be passed
+    // to the sandbox by id.
+    const fileFolders = [FileFolder.AgentChat, FileFolder.FilesField];
+
     for (const file of files) {
       try {
         if (!workspaceId) {
@@ -278,11 +284,19 @@ export class CodeInterpreterTool implements Tool {
           continue;
         }
 
-        const fileContent = await this.fileService.getFileContentById({
-          fileId: file.fileId,
-          workspaceId,
-          fileFolder: FileFolder.AgentChat,
-        });
+        let fileContent: { buffer: Buffer; mimeType: string } | null = null;
+
+        for (const fileFolder of fileFolders) {
+          fileContent = await this.fileService.getFileContentById({
+            fileId: file.fileId,
+            workspaceId,
+            fileFolder,
+          });
+
+          if (fileContent !== null) {
+            break;
+          }
+        }
 
         if (fileContent === null) {
           this.logger.warn(

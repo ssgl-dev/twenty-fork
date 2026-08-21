@@ -49,6 +49,10 @@ export default defineConfig(({ mode }) => {
 
     server: {
       port: port,
+      // Fail loudly if the port is taken instead of silently drifting to a
+      // random port, which breaks the `wait-on tcp:3000` dev chain and leaves
+      // confusing orphan processes behind.
+      strictPort: true,
       ...(VITE_HOST ? { host: VITE_HOST } : {}),
       ...(SSL_KEY_PATH && SSL_CERT_PATH
         ? {

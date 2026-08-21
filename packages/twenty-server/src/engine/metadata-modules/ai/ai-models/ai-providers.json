@@ -1370,5 +1370,22 @@
         "supportsReasoning": true
       }
     ]
+  },
+  "deepseek": {
+    "npm": "@ai-sdk/openai-compatible",
+    "label": "DeepSeek",
+    "apiKey": "{{DEEPSEEK_API_KEY}}",
+    "baseUrl": "https://api.deepseek.com",
+    "models": [
+      {
+        "name": "deepseek-v4-flash",
+        "label": "DeepSeek V4 Flash",
+        "inputCostPerMillionTokens": 0.27,
+        "outputCostPerMillionTokens": 1.1,
+        "cachedInputCostPerMillionTokens": 0.07,
+        "contextWindowTokens": 128000,
+        "maxOutputTokens": 8192
+      }
+    ]
   }
 }

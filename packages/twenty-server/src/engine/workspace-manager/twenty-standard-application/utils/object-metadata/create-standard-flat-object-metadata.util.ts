@@ -10,6 +10,32 @@ import {
 } from 'src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-object-flat-metadata.util';
 
 export const STANDARD_FLAT_OBJECT_METADATA_BUILDERS_BY_OBJECT_NAME = {
+  analysis: ({
+    now,
+    workspaceId,
+    standardObjectMetadataRelatedEntityIds,
+    twentyStandardApplicationId,
+    dependencyFlatEntityMaps,
+  }: Omit<CreateStandardObjectArgs<'analysis'>, 'context' | 'objectName'>) =>
+    createStandardObjectFlatMetadata({
+      objectName: 'analysis',
+      dependencyFlatEntityMaps,
+      context: {
+        universalIdentifier: STANDARD_OBJECTS.analysis.universalIdentifier,
+        nameSingular: 'analysis',
+        namePlural: 'analyses',
+        labelSingular: i18nLabel(msg`Analysis`),
+        labelPlural: i18nLabel(msg`Analyses`),
+        description: i18nLabel(msg`A data analysis`),
+        icon: 'IconChartBar',
+        isSearchable: true,
+        labelIdentifierFieldMetadataName: 'name',
+      },
+      workspaceId,
+      standardObjectMetadataRelatedEntityIds,
+      twentyStandardApplicationId,
+      now,
+    }),
   attachment: ({
     now,
     workspaceId,

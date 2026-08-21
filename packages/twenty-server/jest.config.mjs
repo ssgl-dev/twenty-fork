@@ -9,6 +9,8 @@ const jestConfig = {
   prettierPath: null,
   // to enable logs, comment out the following line
   silent: true,
+  // Limit parallelism on low-RAM machines (default = cores - 1, can eat 500MB+ per worker)
+  maxWorkers: 2,
   ...(isCI && { reporters: ['./jest-failures-only-reporter.js'] }),
   errorOnDeprecated: true,
   clearMocks: true,

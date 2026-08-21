@@ -3,6 +3,13 @@ import { STANDARD_OBJECTS } from 'twenty-shared/metadata';
 import { NavigationMenuItemType } from 'src/engine/metadata-modules/navigation-menu-item/enums/navigation-menu-item-type.enum';
 
 export const STANDARD_NAVIGATION_MENU_ITEMS = {
+  allAnalyses: {
+    universalIdentifier: '20202020-b00b-4b0b-8b0b-c0aba11c000b',
+    type: NavigationMenuItemType.OBJECT,
+    viewUniversalIdentifier:
+      STANDARD_OBJECTS.analysis.views.allAnalyses.universalIdentifier,
+    position: 6,
+  },
   allCompanies: {
     universalIdentifier: '20202020-b001-4b01-8b01-c0aba11c0001',
     type: NavigationMenuItemType.OBJECT,
@@ -50,7 +57,7 @@ export const STANDARD_NAVIGATION_MENU_ITEMS = {
     type: NavigationMenuItemType.FOLDER,
     name: 'Workflows',
     icon: 'IconSettingsAutomation',
-    position: 6,
+    position: 7,
   },
   workflowsFolderAllWorkflows: {
     universalIdentifier: '20202020-b008-4b08-8b08-c0aba11c0008',
@@ -82,6 +89,7 @@ export const STANDARD_NAVIGATION_MENU_ITEMS = {
 export const STANDARD_NAVIGATION_MENU_ITEM_DEFAULT_COLORS: Partial<
   Record<keyof typeof STANDARD_NAVIGATION_MENU_ITEMS, string>
 > = {
+  allAnalyses: 'purple',
   allCompanies: 'blue',
   allPeople: 'blue',
   allTasks: 'turquoise',

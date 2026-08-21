@@ -19,6 +19,7 @@ export const STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS = {
   dashboard: '20202020-3840-4b6d-9425-0c5188b05ca8',
   messageList: '826561ea-4816-411c-baa0-eec5e6ca8866',
   messageCampaign: '238acb94-dd4c-4036-bc55-19b99d821efd',
+  analysis: '20202020-a1a1-4a1a-8a1a-a1a1a1a1a1a1',
 } as const;
 
 export type StandardObjectWithUniversalIdentifierName =

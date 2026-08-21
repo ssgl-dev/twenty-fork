@@ -50,6 +50,9 @@ dump.rdb
 .crowdin.yml
 .react-email/
 
+# Personal side-project planning (not part of the fork)
+docs/trackmap-saas-planning.md
+
 mcp.json
 /.junie/
 /.agents/plugins/marketplace.json

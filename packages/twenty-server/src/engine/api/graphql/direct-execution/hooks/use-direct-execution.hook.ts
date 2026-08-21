@@ -4,6 +4,8 @@ import { DocumentNode, parse } from 'graphql';
 import { type Plugin } from 'graphql-yoga';
 
 import { isNull } from '@sniptt/guards';
+import { FeatureFlagKey } from 'twenty-shared/types';
+
 import { type DirectExecutionService } from 'src/engine/api/graphql/direct-execution/direct-execution.service';
 import { classifyTopLevelFields } from 'src/engine/api/graphql/direct-execution/utils/classify-top-level-fields.util';
 import { findOperationDefinition } from 'src/engine/api/graphql/direct-execution/utils/find-operation-definition.util';
@@ -24,6 +26,21 @@ export function useDirectExecution(
       const req = (serverContext as unknown as { req: Request }).req;
 
       if (!req.workspace?.id || !req.body?.query) {
+        return;
+      }
+
+      // Direct execution is opt-out: enabled by default to preserve current
+      // behavior. Ops can disable it per-workspace by setting
+      // IS_DIRECT_EXECUTION_ENABLED=false in the workspace feature flags,
+      // which falls back to the standard GraphQL execution path.
+      const featureFlagsMap =
+        await config.featureFlagService.getWorkspaceFeatureFlagsMap(
+          req.workspace.id,
+        );
+
+      if (
+        featureFlagsMap[FeatureFlagKey.IS_DIRECT_EXECUTION_ENABLED] === false
+      ) {
         return;
       }
 

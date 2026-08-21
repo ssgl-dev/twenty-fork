@@ -97,6 +97,16 @@ export const STANDARD_OBJECTS = {
             STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.workflow,
         }),
       },
+      targetAnalysis: {
+        universalIdentifier: getSystemRelationFieldUniversalIdentifier({
+          applicationUniversalIdentifier:
+            TWENTY_STANDARD_APPLICATION_UNIVERSAL_IDENTIFIER,
+          objectUniversalIdentifier:
+            STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.attachment,
+          relationTargetObjectUniversalIdentifier:
+            STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.analysis,
+        }),
+      },
     },
     morphIds: {
       targetMorphId: { morphId: '20202020-f634-435d-ab8d-e1168b375c69' },
@@ -122,6 +132,9 @@ export const STANDARD_OBJECTS = {
       },
       workflowIdIndex: {
         universalIdentifier: 'fadeab4b-79ee-4173-af79-72c51fbad888',
+      },
+      analysisIdIndex: {
+        universalIdentifier: '20202020-c001-4001-8001-c1c1c1c1c1c1',
       },
     },
     views: {
@@ -160,6 +173,9 @@ export const STANDARD_OBJECTS = {
           },
           targetWorkflow: {
             universalIdentifier: '11fcf58b-dbab-42dd-be67-689462111070',
+          },
+          targetAnalysis: {
+            universalIdentifier: '20202020-c002-4002-8002-c2c2c2c2c2c2',
           },
         },
       },
@@ -1539,6 +1555,16 @@ export const STANDARD_OBJECTS = {
             STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.opportunity,
         }),
       },
+      targetAnalysis: {
+        universalIdentifier: getSystemRelationFieldUniversalIdentifier({
+          applicationUniversalIdentifier:
+            TWENTY_STANDARD_APPLICATION_UNIVERSAL_IDENTIFIER,
+          objectUniversalIdentifier:
+            STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.noteTarget,
+          relationTargetObjectUniversalIdentifier:
+            STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.analysis,
+        }),
+      },
     },
     morphIds: {
       targetMorphId: { morphId: '20202020-f635-435d-ab8d-e1168b375c70' },
@@ -1555,6 +1581,9 @@ export const STANDARD_OBJECTS = {
       },
       opportunityIdIndex: {
         universalIdentifier: '0d1a59b4-cc87-4b7d-804a-656e8504f371',
+      },
+      analysisIdIndex: {
+        universalIdentifier: '20202020-d001-4001-8001-d1d1d1d1d1d1',
       },
     },
     views: {
@@ -1575,6 +1604,9 @@ export const STANDARD_OBJECTS = {
           },
           targetOpportunity: {
             universalIdentifier: '3efeb162-cd03-458b-9c7b-47032d045204',
+          },
+          targetAnalysis: {
+            universalIdentifier: '20202020-d002-4002-8002-d2d2d2d2d2d2',
           },
         },
       },
@@ -2927,6 +2959,117 @@ export const STANDARD_OBJECTS = {
           },
           assignedTasks: {
             universalIdentifier: 'af16226e-6375-4676-8bd9-9d1a57076fc4',
+          },
+        },
+      },
+    },
+  },
+  analysis: {
+    universalIdentifier: STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.analysis,
+    fields: {
+      ...buildStandardObjectSystemFields(
+        STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.analysis,
+      ),
+      name: { universalIdentifier: '20202020-a1a2-4a1a-8a1a-a1a1a1a1a1a2' },
+      csvFileId: { universalIdentifier: '20202020-a1a3-4a1a-8a1a-a1a1a1a1a1a3' },
+      analysisType: { universalIdentifier: '20202020-a1a4-4a1a-8a1a-a1a1a1a1a1a4' },
+      targetColumn: { universalIdentifier: '20202020-a1a5-4a1a-8a1a-a1a1a1a1a1a5' },
+      config: { universalIdentifier: '20202020-a1a6-4a1a-8a1a-a1a1a1a1a1a6' },
+      status: { universalIdentifier: '20202020-a1a7-4a1a-8a1a-a1a1a1a1a1a7' },
+      result: { universalIdentifier: '20202020-a1bd-4a1a-8a1a-a1a1a1a1a1bd' },
+      attachments: {
+        universalIdentifier: getSystemRelationFieldUniversalIdentifier({
+          applicationUniversalIdentifier:
+            TWENTY_STANDARD_APPLICATION_UNIVERSAL_IDENTIFIER,
+          objectUniversalIdentifier:
+            STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.analysis,
+          relationTargetObjectUniversalIdentifier:
+            STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.attachment,
+        }),
+      },
+      noteTargets: {
+        universalIdentifier: getSystemRelationFieldUniversalIdentifier({
+          applicationUniversalIdentifier:
+            TWENTY_STANDARD_APPLICATION_UNIVERSAL_IDENTIFIER,
+          objectUniversalIdentifier:
+            STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.analysis,
+          relationTargetObjectUniversalIdentifier:
+            STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.noteTarget,
+        }),
+      },
+    },
+    indexes: {
+      searchVectorGinIndex: {
+        universalIdentifier: '20202020-a1a8-4a1a-8a1a-a1a1a1a1a1a8',
+      },
+    },
+    views: {
+      allAnalyses: {
+        universalIdentifier: '20202020-a1a9-4a1a-8a1a-a1a1a1a1a1a9',
+        viewFields: {
+          name: {
+            universalIdentifier: '20202020-a1aa-4a1a-8a1a-a1a1a1a1a1aa',
+          },
+          analysisType: {
+            universalIdentifier: '20202020-a1ab-4a1a-8a1a-a1a1a1a1a1ab',
+          },
+          status: {
+            universalIdentifier: '20202020-a1ac-4a1a-8a1a-a1a1a1a1a1ac',
+          },
+          createdBy: {
+            universalIdentifier: '20202020-a1ad-4a1a-8a1a-a1a1a1a1a1ad',
+          },
+          createdAt: {
+            universalIdentifier: '20202020-a1ae-4a1a-8a1a-a1a1a1a1a1ae',
+          },
+          csvFileId: {
+            universalIdentifier: '20202020-a1af-4a1a-8a1a-a1a1a1a1af01',
+          },
+        },
+      },
+      analysisRecordPageFields: {
+        universalIdentifier: '20202020-a1af-4a1a-8a1a-a1a1a1a1a1af',
+        viewFieldGroups: {
+          general: {
+            universalIdentifier: '20202020-a1b0-4a1a-8a1a-a1a1a1a1a1b0',
+          },
+          configuration: {
+            universalIdentifier: '20202020-a1b1-4a1a-8a1a-a1a1a1a1a1b1',
+          },
+          system: {
+            universalIdentifier: '20202020-a1b2-4a1a-8a1a-a1a1a1a1a1b2',
+          },
+        },
+        viewFields: {
+          name: {
+            universalIdentifier: '20202020-a1b3-4a1a-8a1a-a1a1a1a1a1b3',
+          },
+          csvFileId: {
+            universalIdentifier: '20202020-a1b4-4a1a-8a1a-a1a1a1a1a1b4',
+          },
+          analysisType: {
+            universalIdentifier: '20202020-a1b5-4a1a-8a1a-a1a1a1a1a1b5',
+          },
+          targetColumn: {
+            universalIdentifier: '20202020-a1b6-4a1a-8a1a-a1a1a1a1a1b6',
+          },
+          config: {
+            universalIdentifier: '20202020-a1b7-4a1a-8a1a-a1a1a1a1a1b7',
+          },
+          status: {
+            universalIdentifier: '20202020-a1b8-4a1a-8a1a-a1a1a1a1a1b8',
+          },
+          createdAt: {
+            universalIdentifier: '20202020-a1b9-4a1a-8a1a-a1a1a1a1a1b9',
+          },
+          createdBy: {
+            universalIdentifier: '20202020-a1ba-4a1a-8a1a-a1a1a1a1a1ba',
+          },
+          updatedAt: {
+            universalIdentifier: '20202020-a1bb-4a1a-8a1a-a1a1a1a1a1bb',
+          },
+          updatedBy: {
+            universalIdentifier: '20202020-a1bc-4a1a-8a1a-a1a1a1a1a1bc',
           },
         },
       },

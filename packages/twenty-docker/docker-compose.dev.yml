@@ -11,6 +11,7 @@ name: twenty-dev
 services:
   db:
     image: postgres:16
+    mem_limit: 512m
     volumes:
       - dev-db-data:/var/lib/postgresql/data
     ports:
@@ -28,14 +29,30 @@ services:
 
   redis:
     image: redis:7
+    mem_limit: 256m
     ports:
       - "6379:6379"
-    command: ["--maxmemory-policy", "noeviction"]
+    command: ["--maxmemory", "128mb", "--maxmemory-policy", "noeviction"]
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 5s
       timeout: 5s
       retries: 10
+    restart: unless-stopped
+
+  analysis-service:
+    build:
+      context: ../twenty-analysis-service
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
     restart: unless-stopped
 
 volumes:
